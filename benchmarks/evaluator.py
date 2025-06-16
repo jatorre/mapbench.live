@@ -25,7 +25,7 @@ class Evaluator:
         self.results_dir = Path(results_dir)
         self.results_dir.mkdir(exist_ok=True)
     
-    def load_tasks(self, task_ids: Optional[List[str]] = None) -> List[Task]:
+    def load_tasks(self, task_ids: Optional[List[str]] = None, limit: Optional[int] = None) -> List[Task]:
         """Load tasks from the tasks directory"""
         tasks = []
         
@@ -48,6 +48,12 @@ class Evaluator:
                 type=task_data.get('type')
             )
             tasks.append(task)
+        
+        # Apply limit if specified
+        if limit and len(tasks) > limit:
+            import random
+            random.shuffle(tasks)
+            tasks = tasks[:limit]
         
         return tasks
     
@@ -82,12 +88,14 @@ class Evaluator:
     
     async def evaluate_all_models(self, 
                                  tasks: Optional[List[Task]] = None,
-                                 model_ids: Optional[List[str]] = None) -> Dict[str, Any]:
+                                 model_ids: Optional[List[str]] = None,
+                                 task_ids: Optional[List[str]] = None,
+                                 limit: Optional[int] = None) -> Dict[str, Any]:
         """Evaluate all (or specified) models on all (or specified) tasks"""
         
         # Load tasks if not provided
         if tasks is None:
-            tasks = self.load_tasks()
+            tasks = self.load_tasks(task_ids=task_ids, limit=limit)
         
         # Get model IDs to evaluate
         if model_ids is None:
@@ -183,7 +191,8 @@ class Evaluator:
 
 
 async def run_benchmark(model_ids: Optional[List[str]] = None, 
-                       task_ids: Optional[List[str]] = None):
+                       task_ids: Optional[List[str]] = None,
+                       limit: Optional[int] = None):
     """Main entry point for running benchmarks"""
     evaluator = Evaluator()
     
@@ -200,7 +209,8 @@ async def run_benchmark(model_ids: Optional[List[str]] = None,
     
     results = await evaluator.evaluate_all_models(
         model_ids=model_ids,
-        tasks=evaluator.load_tasks(task_ids) if task_ids else None
+        task_ids=task_ids,
+        limit=limit
     )
     
     print("\n=== LEADERBOARD ===")

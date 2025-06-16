@@ -33,6 +33,12 @@ def parse_args():
     )
     
     parser.add_argument(
+        "--limit",
+        type=int,
+        help="Limit number of tasks to run (random selection)"
+    )
+    
+    parser.add_argument(
         "--output",
         type=str,
         default="data/results",
@@ -56,7 +62,11 @@ def main():
     
     # Run the benchmark
     try:
-        asyncio.run(run_benchmark(model_ids=model_ids, task_ids=task_ids))
+        asyncio.run(run_benchmark(
+            model_ids=model_ids, 
+            task_ids=task_ids,
+            limit=args.limit
+        ))
         print("\nBenchmark completed successfully!")
     except Exception as e:
         print(f"\nError running benchmark: {e}", file=sys.stderr)
