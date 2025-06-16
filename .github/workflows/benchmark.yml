@@ -53,13 +53,7 @@ jobs:
         if git diff --name-only HEAD HEAD~1 | grep -q "data/models.yaml"; then
           echo "models.yaml changed - running test models on 30 random tasks..."
           # Get all test models from models.yaml
-          TEST_MODELS=$(python -c "
-import yaml
-with open('data/models.yaml', 'r') as f:
-    models = yaml.safe_load(f)['models']
-test_models = [m['id'] for m in models if '-test' in m['id']]
-print(','.join(test_models))
-          ")
+          TEST_MODELS=$(python -c "import yaml; f = open('data/models.yaml', 'r'); models = yaml.safe_load(f)['models']; test_models = [m['id'] for m in models if '-test' in m['id']]; print(','.join(test_models))")
           echo "Running test models: $TEST_MODELS"
           python scripts/run_benchmark.py \
             --models "$TEST_MODELS" \
