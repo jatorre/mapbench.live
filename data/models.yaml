@@ -26,17 +26,23 @@ models:
     auth: "env:OPENAI_API_KEY"
     description: "Test run with GPT-4o on 30 tasks"
     
-  - id: gpt-4-turbo-test
+  - id: gpt-4-1-test
     provider: openai
-    endpoint: "openai:gpt-4-turbo"
+    endpoint: "openai:gpt-4.1"
     auth: "env:OPENAI_API_KEY"
-    description: "Test run with GPT-4 Turbo with vision on 30 tasks"
+    description: "Test run with GPT-4.1 on 30 tasks"
     
-  - id: gpt-4-turbo-2024-04-09-test
+  - id: gpt-4-1-mini-test
     provider: openai
-    endpoint: "openai:gpt-4-turbo-2024-04-09"
+    endpoint: "openai:gpt-4.1-mini"
     auth: "env:OPENAI_API_KEY"
-    description: "Test run with latest GPT-4 Turbo (Apr 2024) with vision on 30 tasks"
+    description: "Test run with GPT-4.1-mini on 30 tasks"
+    
+  - id: o3-test
+    provider: openai
+    endpoint: "openai:o3"
+    auth: "env:OPENAI_API_KEY"
+    description: "Test run with o3 on 30 tasks"
     
   - id: gemini-2-flash
     provider: vertexai
@@ -52,4 +58,4 @@ models:
     auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
     description: "Google Gemini 1.5 Pro with vision"
 
-# Trigger benchmark run for GPT-4o, GPT-4 Turbo, and GPT-4 Vision on 30 tasks
+# Trigger benchmark run for GPT-4o, GPT-4.1, GPT-4.1-mini, and o3 on 30 tasks
