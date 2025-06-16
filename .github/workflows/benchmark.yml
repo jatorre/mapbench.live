@@ -1,0 +1,63 @@
+name: Run Benchmark
+
+on:
+  push:
+    paths:
+      - 'data/models.yaml'
+      - 'data/tasks/**'
+  pull_request:
+    paths:
+      - 'data/models.yaml'
+      - 'data/tasks/**'
+  workflow_dispatch:
+    inputs:
+      models:
+        description: 'Comma-separated list of model IDs to benchmark (leave empty for all)'
+        required: false
+        type: string
+      tasks:
+        description: 'Comma-separated list of task IDs to run (leave empty for all)'
+        required: false
+        type: string
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run benchmark
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+      run: |
+        python scripts/run_benchmark.py \
+          --models "${{ github.event.inputs.models }}" \
+          --tasks "${{ github.event.inputs.tasks }}"
+    
+    - name: Upload results
+      uses: actions/upload-artifact@v3
+      with:
+        name: benchmark-results
+        path: data/results/
+    
+    - name: Commit updated results
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/results/
+        git diff --staged --quiet || git commit -m "Update benchmark results [skip ci]"
+        git push

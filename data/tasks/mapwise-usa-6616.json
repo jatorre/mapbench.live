@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-6616",
+  "map_image": "mapwise-usa-6616.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: Idaho has higher value as Colorado.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state Indiana fall in?",
+      "a": "39.4 - 43.7%",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the southern-most state that belongs to a similar value range compared to all its neighbours.",
+      "a": "Florida",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes/No: Florida has a similar value as Illinois and also have a higher value than New York.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does New York fall in range 30.9%?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering California have a value similar to North Carolina?",
+      "a": "2",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Mexico have a value higher than Kansas?",
+      "a": "California, Texas, New Mexico",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Georgia is similar to Texas.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "30.9-50.4%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced ?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Texas, Montana, and Minnesota in terms of the legend value in the Border States region?",
+      "a": "Minnesota < Montana < Texas",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "6616",
+    "image_variant": "with_annotations"
+  }
+}

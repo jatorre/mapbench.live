@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-5",
+  "map_image": "mapwise-usa-5.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state Florida is similar to state Maine.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Kentucky has a lower value than state Florida, and also a similar value as state Montana.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Maine is the North eastern-most state that has a similar value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does California have the same value to state Oregon?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Florida and Alabama are the pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state Texas fall in?",
+      "a": "20M - 30M",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state in the east coast region has a similar value to state Florida?",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which range has the highest number of states?",
+      "a": "0-10M",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States of region bordering Canada have lower values on average than states bordering Mexico.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "5",
+    "image_variant": "with_annotations"
+  }
+}

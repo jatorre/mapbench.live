@@ -1,0 +1,19 @@
+{
+  "id": "cf-original-map-20517",
+  "map_image": "cf-original-map-20517.png",
+  "context": "Counterfactual original map - map",
+  "type": "choropleth_counterfactual",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What type of data pattern do you observe in this map?",
+      "a": "This is a original counterfactual map",
+      "type": "short_answer"
+    }
+  ],
+  "metadata": {
+    "counterfactual_type": "original",
+    "country": "map",
+    "original_map_id": "20517"
+  }
+}

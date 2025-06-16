@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-5000",
+  "map_image": "mapwise-usa-5000.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state along the Canada border has the highest value?",
+      "a": "Minnesota",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Montana has the same value as Texas.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Florida fall in range 0.34-0.36?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Canada have a value similar to Utah?",
+      "a": "Maine",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Florida is the southern most state that has a higher value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: a majority of states bordering Texas belong to range greater than 0.3.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "0.24-0.36",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Texas, Louisiana, and Mississippi in terms of the legend value in the Gulf Coast region?",
+      "a": "Texas < Mississippi < Louisiana",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "5000",
+    "image_variant": "with_annotations"
+  }
+}

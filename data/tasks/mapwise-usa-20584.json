@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-20584",
+  "map_image": "mapwise-usa-20584.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: California and Nevada are the pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which pair of state with values above 8M are closest to one another?",
+      "a": "Florida, Texas",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states bordering Maine have values in range 0-2M.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: a majority of states bordering Canada belong to range less than 6M.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Texas has a higher value than Florida and also a lower value than California.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range (legend markings wise) does Texas fall in?",
+      "a": "10-12M",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New York has the highest value in the Canada border region.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Montana fall in range 0-2M?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state has the least value on the west coast?",
+      "a": "Oregon",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "20584",
+    "image_variant": "with_annotations"
+  }
+}

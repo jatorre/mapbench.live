@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-15912",
+  "map_image": "mapwise-usa-15912.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of the state California is higher as its neighbouring state Oregon.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state on the West Coast has the highest value?",
+      "a": "California",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: a majority of states on the east coast belong to range less than 1M.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Texas has a higher value than Florida, and also have a similar value as New York.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New York is an outlier compared to other states on the east coast.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "0-5M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States bordering Canada have higher values on average than states bordering Mexico.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does New York fall in range 1-2M?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "15912",
+    "image_variant": "with_annotations"
+  }
+}

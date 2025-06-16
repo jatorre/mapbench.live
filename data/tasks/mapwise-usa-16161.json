@@ -1,0 +1,68 @@
+{
+  "id": "mapwise-usa-16161",
+  "map_image": "mapwise-usa-16161.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states on the North coast have missing data?",
+      "a": "Idaho, North Dakota, South Dakota, Montana, Wyoming",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the Mexico border has the lowest value?",
+      "a": "Texas",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Carolina has lower value than Oregon.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "10.3-14.7%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the southern most state in the range 14.9-18.5%.",
+      "a": "Mississippi",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "16161",
+    "image_variant": "with_annotations"
+  }
+}

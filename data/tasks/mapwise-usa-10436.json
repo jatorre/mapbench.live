@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-10436",
+  "map_image": "mapwise-usa-10436.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Does New York fall in range above 20%?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Illinois have a value similar to South Carolina?",
+      "a": "2",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state bordering New Mexico has the same value as Montana?",
+      "a": "Utah",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts absolute values.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along Canada border have a value lower than 13.6%?",
+      "a": "New Hampshire, Montana, North Dakota",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states in the west caost region have values in the highest range.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the Louisiana is similar to its neighbouring state Arkansas.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "10.2-13.6%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "10436",
+    "image_variant": "with_annotations"
+  }
+}

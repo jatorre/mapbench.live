@@ -1,0 +1,19 @@
+{
+  "id": "cf-jumbled-map-4",
+  "map_image": "cf-jumbled-map-4.png",
+  "context": "Counterfactual jumbled map - map",
+  "type": "choropleth_counterfactual",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What type of data pattern do you observe in this map?",
+      "a": "This is a jumbled counterfactual map",
+      "type": "short_answer"
+    }
+  ],
+  "metadata": {
+    "counterfactual_type": "jumbled",
+    "country": "map",
+    "original_map_id": "4"
+  }
+}

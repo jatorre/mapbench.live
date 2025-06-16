@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-16391",
+  "map_image": "mapwise-usa-16391.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does the state of Nebraska come under the value range 0.14 -0.16?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state Idaho fall in?",
+      "a": "> 0.22",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: California and Oregon are the pair of bordering states along the west coast with the least difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "How many states in the west coast have a value lower than Texas?",
+      "a": "3",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New Jersey has the highest value in the east coast region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state California is higher as its neighbouring state Oregon.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "16391",
+    "image_variant": "with_annotations"
+  }
+}

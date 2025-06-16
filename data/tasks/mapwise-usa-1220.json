@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-1220",
+  "map_image": "mapwise-usa-1220.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states bordering Lake Superior have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the northern most state that belongs to a higher range compared to all its neighbours.",
+      "a": "New York",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Utah and Arizona are the pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: All the states bordering Montana belong to the same range.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state bordering the Great Lakes have a value similar to Texas?",
+      "a": "New York",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Nevada is similar to Washington.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does New York fall in range 4037892-12298138?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Arizona, New Mexico, and Texas in terms of the legend value in the Southwest region?",
+      "a": "New Mexico < Arizona < Texas",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "1220",
+    "image_variant": "with_annotations"
+  }
+}

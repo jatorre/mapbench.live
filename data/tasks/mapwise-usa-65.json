@@ -1,0 +1,140 @@
+{
+  "id": "mapwise-usa-65",
+  "map_image": "mapwise-usa-65.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states in west coast region belong to range > 60k?",
+      "a": "California",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the northern most state with the highest value.",
+      "a": "New York",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does state Montana fall in range 0-10k?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state Maine is higher to state Louisiana.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Washington has the highest value along the western coast.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: a majority of states bordering Canada have values lower than Florida.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Illinois has a similar value as Texas and also have a higher value than Nevada.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "How many states bordering Lake Michigan have a value higher than 50k?",
+      "a": "0",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state has the second highest value in the west coast region?",
+      "a": "Washington",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the northern most state in the range 50-60k.",
+      "a": "New York",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Vermont, New York, and Michigan in terms of the legend value in the Canada Border region?",
+      "a": "Vermont < Michigan < New York",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which is the Northern most state with the highest value?",
+      "a": "New York",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: North Dakota has the same value as South Dakota.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of North Dakota is lower than South Dakota.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the North most state in the range 50-60k.",
+      "a": "New York",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state bordering the Great Lakes has the same value as Florida?",
+      "a": "New York",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the legend has multiple distinct colours?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does California fall in range above 60k?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "65",
+    "image_variant": "with_annotations"
+  }
+}

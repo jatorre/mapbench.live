@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-3689",
+  "map_image": "mapwise-usa-3689.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California and Nevada are a pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the second highest value range in the legend?",
+      "a": "1342089-1948189",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Lake Superior have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states on the western coast have a value similar than state North Carolina?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the Canada border have a value similar to Florida?",
+      "a": "New York",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: state New Mexico has the least value among states bordering Mexico.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has multiple distinct colours?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state West Virginia fall in?",
+      "a": "38046-507934",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Tennessee, Kentucky, and Arkansas in terms of the legend value in the Mid-South region?",
+      "a": "Arkansas < Kentucky < Tennessee",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "3689",
+    "image_variant": "with_annotations"
+  }
+}

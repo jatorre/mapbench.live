@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-12175",
+  "map_image": "mapwise-usa-12175.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: New York has the highest value in the northeastern region.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States bordering lake Superior have a higher value on average than states bordering Mexico.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state has the highest value along the Canada border",
+      "a": "New York",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the westernmost state that has a higher value than all its neighbours.",
+      "a": "California",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states neighbouring New Mexico have a value lower than New York?",
+      "a": "Colorado, Oklahoma",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Canada have a value similar to Texas?",
+      "a": "1",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Carolina is an outlier compared to other states in its neighbouring region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Dakota and South Dakota are the pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state Utah is lower than its neighbouring state Arizona.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state Mississippi fall in?",
+      "a": "219-522",
+      "type": "count",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "12175",
+    "image_variant": "with_annotations"
+  }
+}

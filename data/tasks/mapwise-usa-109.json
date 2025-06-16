@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-109",
+  "map_image": "mapwise-usa-109.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: all states bordering Alabama have values 7-15.6% .",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "7-34.2%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does New York state fall in the range 29.1-34.2%?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "29.1-34.2%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the Southern-most state that belongs to a similar value range compared to all its neighbours.",
+      "a": "South Carolina",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes/No: North Carolina has a similar value as Michigan and also have a similar value than state California.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "5",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Wyoming have a value higher than state Massachusetts?",
+      "a": "",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Minnesota, Wisconsin, and Michigan in terms of the legend value in the Great Lakes region?",
+      "a": "Michigan < Wisconsin < Minnesota",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "109",
+    "image_variant": "with_annotations"
+  }
+}

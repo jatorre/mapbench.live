@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-7729",
+  "map_image": "mapwise-usa-7729.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which 3 states on the East Coast have the highest values?",
+      "a": "Maine, North Carolina, Georgia",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Indiana has higher value than Alaska.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Texas have a value higher than 0.26?",
+      "a": "Arkansas , Louisiana",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the northern most state in the range 0.2-0.22.",
+      "a": "North Dakota",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the lowest value range among the states bordering Lake Superior?",
+      "a": "0.2-0.22",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the northern most state that belongs to a similar value range compared to 2 of its neighbours.",
+      "a": "Idaho",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States bordering Arkansas have higher values on average than states bordering Washington.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "How many states on the Canada border have a value similar to California?",
+      "a": "2",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states West Virginia, Kentucky, and Tennessee in terms of the legend value in the Appalachian region?",
+      "a": "Tennessee < Kentucky < West Virginia",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "7729",
+    "image_variant": "with_annotations"
+  }
+}

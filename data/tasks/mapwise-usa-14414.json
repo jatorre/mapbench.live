@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-14414",
+  "map_image": "mapwise-usa-14414.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range in the region around the Great Lakes?",
+      "a": "13.2% - 21.1%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Georgia is higher than Washington.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state California fall in?",
+      "a": "2.9% - 4.5%",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: a majority of states in the south east region belong to the highest range.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "4.5% - 50.6%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "6.7% - 12.7%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "14414",
+    "image_variant": "with_annotations"
+  }
+}

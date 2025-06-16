@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-49",
+  "map_image": "mapwise-usa-49.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states in the north-east region belong to range 500-600k?",
+      "a": "New York",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are there significant gaps between certain ranges in the legend? Yes/No",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "How many states bordering Lake Erie have a value higher than 500K?",
+      "a": "1",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states bordering Canada have values below 100K.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "How many states bordering Texas have a value similar to state South Carolina?",
+      "a": "4",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state Connecticut is lower than its neighbouring state Rhode Island.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "700k - 800k",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Alaska has the same value as North Dakota.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "49",
+    "image_variant": "with_annotations"
+  }
+}

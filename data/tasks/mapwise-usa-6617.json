@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-6617",
+  "map_image": "mapwise-usa-6617.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Utah fall in range below 0.8?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does New York fall in range above 0.8?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of Florida is similar to its neighbouring state Georgia.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Wyoming has a lower value than Maine and also have a higher value than Alaska.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Between which two legend markings does Nebraska fall?",
+      "a": "0.6-0.8",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which range no between two legend markings has the highest number of states?",
+      "a": "0.8-1",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Wyoming is an outlier compared to all other states",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "6617",
+    "image_variant": "with_annotations"
+  }
+}

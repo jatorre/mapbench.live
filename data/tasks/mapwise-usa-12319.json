@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-12319",
+  "map_image": "mapwise-usa-12319.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the west coast borders at least 1 state from range 3-6?",
+      "a": "Oregon",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which range has the highest number of states?",
+      "a": "0-1",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "List the states bordering Alabama with the highest values.",
+      "a": "Georgia, Mississippi, Tennessee",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "3",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Colorado have a value similar to Wisconsin?",
+      "a": "3",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes/No: Ohio has a higher value than California, and also a similar value as Florida.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Iowa and Missouri are a pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "12319",
+    "image_variant": "with_annotations"
+  }
+}

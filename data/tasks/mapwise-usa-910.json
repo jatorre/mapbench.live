@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-910",
+  "map_image": "mapwise-usa-910.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": ">0.035",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does the lightest shade represent?",
+      "a": "<0.015",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "0.015-0.02",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states on the east coast have a value lower than 0.015?",
+      "a": "Virginia",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states on the west coast have a value lower than 0.015?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of California is higher than its neighbouring state New York",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state has the leasest value in the west coast region?",
+      "a": "California",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States along Canada border have higher values on average than states bordering Mexico.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Nebraska have the same value as Texas.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Pennsylvania, New York, and Ohio in terms of the legend value in the Great Lakes region?",
+      "a": "Ohio < Pennsylvania < New York",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "910",
+    "image_variant": "with_annotations"
+  }
+}

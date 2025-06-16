@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-8616",
+  "map_image": "mapwise-usa-8616.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: a majority of states bordering Canada belong to range less than 4M.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States bordering Montana have similar values on average as states bordering Maine.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "<2M - >10M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does the second darkest shade represent?",
+      "a": "2-4M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does California fall in?",
+      "a": ">10M",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states bordering New York have values below 6M.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New York is the northern most state that has a higher value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states in the north east belong to range >10M?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: California is an outlier compared to other states in the west coast region",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "8616",
+    "image_variant": "with_annotations"
+  }
+}

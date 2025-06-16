@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-16686",
+  "map_image": "mapwise-usa-16686.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the Canada border has the highest value?",
+      "a": "Minnesota",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the west coast in range 6-8% borders only one state from range 6-8%?",
+      "a": "California, Washington",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the Northmost state in the highest range.",
+      "a": "Alaska",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "6% - 18%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "13% - 18%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "5",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Washinton is an outlier compared to other states in the west coast.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state California have the same value as Oregon amongst the states in the west coast region.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "16686",
+    "image_variant": "with_annotations"
+  }
+}

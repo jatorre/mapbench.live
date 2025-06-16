@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-19332",
+  "map_image": "mapwise-usa-19332.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the West Coast has the highest value?",
+      "a": "Oregon",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of  Florida is higher than Maine.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Oregon has the least value along the west coast.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the westmost state that belongs to a higher value range compared to all its neighbours.",
+      "a": "Idaho",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states along the east coast have a value similar to California?",
+      "a": "6",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state California is higher than its neighbouring state Oregon.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the southern-most state in the range 950-1400.",
+      "a": "Utah",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: a majority of states in bordering Texas belong to range 950-1400.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the lightest shade represent?",
+      "a": "2980 - 6320",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "19332",
+    "image_variant": "with_annotations"
+  }
+}

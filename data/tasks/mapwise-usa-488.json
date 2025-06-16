@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-488",
+  "map_image": "mapwise-usa-488.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering North Dakota has the same value as North Carolina?",
+      "a": "Montana, South Dakota, Minnesota",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of North Dakota is higher than Alabama.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range in the northeast region?",
+      "a": "27-34",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Mexico have a value lower than Michigan?",
+      "a": "Arizaon, California",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes/No: South Carolina has a similar value as Idaho and also have a similar value as New Mexico.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of North Carolina is similar to its neighbouring state South Carolina.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the western most state in the range 44-57.",
+      "a": "Utah",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Idaho, Montana, and Utah in terms of the legend value in the Canada Border region?",
+      "a": "Montana < Idaho < Utah",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "488",
+    "image_variant": "with_annotations"
+  }
+}

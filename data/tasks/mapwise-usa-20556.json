@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-20556",
+  "map_image": "mapwise-usa-20556.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: Iowa and Missouri are a pair of bordering states with the least difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the east coast have a value same as California?",
+      "a": "North Carolina",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Florida fall in range 91,400-2,51,500?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which class has the largest range of values?",
+      "a": "91400 - 251500",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States of the west coast have higher values on average than states of the east coast.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California is the western-most state that has a higher value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the northern most state in the range 1400-18,900.",
+      "a": "Maine",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states belonging to the highest range are the closest to each other along the Mexico border?",
+      "a": "California, Arizona, New Mexico",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "Vermont",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "20556",
+    "image_variant": "with_annotations"
+  }
+}

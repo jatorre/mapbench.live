@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-9685",
+  "map_image": "mapwise-usa-9685.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Does New York fall in range above 8%?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Wyoming has lesser value than North Carolina.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Texas and Louisiana are a pair of bordering states with the highest difference in range.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Count the states with the values in range 5.0%-8.4% on the west caost.",
+      "a": "2",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state along the Mexico border has the same value as Wyoming?",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California is the Western-most state that has a lower value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering Kansas have values above 5%.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does California fall in?",
+      "a": "8.7-14.6%",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "0.6-2.5%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "9685",
+    "image_variant": "with_annotations"
+  }
+}

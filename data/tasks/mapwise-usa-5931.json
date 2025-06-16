@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-5931",
+  "map_image": "mapwise-usa-5931.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Lake Superior have the highest value?",
+      "a": "Michigan",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does the state Maine come under the value 45-50?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Alabama has higher value than Oregon.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which pair of states belonging to the range 45-50 are the closest to each other?",
+      "a": "Ohio, Pennsylvania",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the state in the northeast in the range 50-55.",
+      "a": "West Virginia",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the western most state that belongs to a similar value range compared to all its neighbours.",
+      "a": "Washington",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Florida have a value similar to Texas?",
+      "a": "Georgia",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "5931",
+    "image_variant": "with_annotations"
+  }
+}

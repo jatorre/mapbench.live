@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-17383",
+  "map_image": "mapwise-usa-17383.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: New York is an outlier compared to other states bordering Canada.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states in along the southern border have a value higher than New York?",
+      "a": "California, Arizona",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states bordering Colorado have values in the same range.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state California fall in?",
+      "a": "3.5-4",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts absolute values.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states on the east coast has the highest value?",
+      "a": "South Carolina",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Florida have the same value to state New York amongst the states along the eastern coast.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced ?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: South Dakota has the least value compared to its neighbours.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "17383",
+    "image_variant": "with_annotations"
+  }
+}

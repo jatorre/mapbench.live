@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-56",
+  "map_image": "mapwise-usa-56.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: a majority of states bodering Canada belong to range 1500-2000.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Carolina is the Eastern most state that has a higher value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: state Arizona has the least value among states bordering Mexico.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the eastern coast borders states without any data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New York and New Jersey are a pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering Oregon have values 1500-2000.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: state Maine is an outlier compared to other states in the north-east region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state Wisconsin fall in?",
+      "a": "1500-2000",
+      "type": "count",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "56",
+    "image_variant": "with_annotations"
+  }
+}

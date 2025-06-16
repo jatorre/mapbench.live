@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-33",
+  "map_image": "mapwise-usa-33.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: All the states bodering Mississippi belong to range 119-160.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state borders only states from range 161-193?",
+      "a": "South Carolina",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "119-293",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "195-224",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Texas fall in range 161-193?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Nevada have a value higher than state Idaho?",
+      "a": "California, Oregon",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state Alabama is similar to its neighbouring state Tennessee.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states on the west coast belonging to the highest range are neighbouring each other?",
+      "a": "California, Oregon, Washington\n",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Michigan, Ohio, and Pennsylvania in terms of the legend value in the Great Lakes region?",
+      "a": "Michigan < Ohio = Pennsylvania",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "33",
+    "image_variant": "with_annotations"
+  }
+}

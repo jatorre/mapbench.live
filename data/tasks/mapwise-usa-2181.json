@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-2181",
+  "map_image": "mapwise-usa-2181.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Oklahoma come under the value 66-92?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which is the Southern most state with a value in the range 35-63?",
+      "a": "Mississippi",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New Mexico has the same value as Texas.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Michigan come under the value 35-63?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state Texas is higher than its neighbouring state Louisiana.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Canada belong to range 95-205?",
+      "a": "New York",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state in the west coast has the same value as Missouri?",
+      "a": "Washington",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "2181",
+    "image_variant": "with_annotations"
+  }
+}

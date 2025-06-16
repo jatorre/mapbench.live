@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-13555",
+  "map_image": "mapwise-usa-13555.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New York is the northern most state with value > 1M that has a higher value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the highest value range in the east coast region?",
+      "a": "2.5-3M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "0-4M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the western-most state in the range 3.5-4M.",
+      "a": "California",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering California have a value higher than Texas?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the 1 state on the Canada border region with the highest values.",
+      "a": "New York",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts absolute values as opposed to percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Florida is an outlier compared to other states on the east coast.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States bordering Lake Superior have higher values on average than states bordering Mexico.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Illinois, Michigan, and Wisconsin in terms of the legend value in the Great Lakes region?",
+      "a": "Wisconsin < Michigan < Illinois",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "13555",
+    "image_variant": "with_annotations"
+  }
+}

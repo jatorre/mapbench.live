@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-689",
+  "map_image": "mapwise-usa-689.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Colorado is an outlier compared to its other neighbouring states",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Rhode Island and Massachusetts are a pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does Michigan fall in?",
+      "a": "1721-3099",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Texas is similar to its neighbouring state New Mexico.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States bordering New Jersey have similar values on average than states bordering Florida",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the western most state that belongs to a higher value range compared to all its neighbours.",
+      "a": "California",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes/No: Wisconsin has a similar value as Ohio and also a lower value than New York.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "689",
+    "image_variant": "with_annotations"
+  }
+}

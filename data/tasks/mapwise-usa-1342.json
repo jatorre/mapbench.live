@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-1342",
+  "map_image": "mapwise-usa-1342.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state South Dakota is lower than its neighbouring state Minnesota.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "North Dakota, New Hampshire, Vermont, Rhode Island, Nebraska",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the Canada border has the highest value?",
+      "a": "Washington",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state along the Great Lakes region has the highest value?",
+      "a": "New York, Michigan",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the east coast has the highest value?",
+      "a": "Massachusetts",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does South Dakota fall in range above 5%?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Alaska fall in range 5.1% - 15.6%?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range in the Canada bordering region?",
+      "a": "3.3-4.9%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: All the states bordering Florida belong to the range 1-1.8%.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "1342",
+    "image_variant": "with_annotations"
+  }
+}

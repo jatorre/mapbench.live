@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-8083",
+  "map_image": "mapwise-usa-8083.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: States bordering lake Superior have a higher value on average than states bordering Mexico.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state in the west coast region has the same value as state Illinois?",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "1816358-3613005",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Nebraska has the highest value in the northern region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Maine is the Northern-most state that has a lower value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Carolina is an outlier compared to other states in its neighbouring region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states neighbouring New Mexico have a value lower than New York?",
+      "a": "Arizona, Colorado, Oklahoma",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour darkness inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "List the southern most state with the lowest value.",
+      "a": "Mississippi",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Georgia, Alabama, and Mississippi in terms of the legend value in the South region?",
+      "a": "Mississippi < Alabama < Georgia",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "8083",
+    "image_variant": "with_annotations"
+  }
+}

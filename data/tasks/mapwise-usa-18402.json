@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-18402",
+  "map_image": "mapwise-usa-18402.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of the state New Hampshire is higher than its neighbouring state Vermont.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state along the Canada border region has the lowest value?",
+      "a": "Maine",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: California has a similar value as Florida and also have a higher value than Maine.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the least value range in the west coast region?",
+      "a": "<0.05",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state along the Canada border has the same value as Arkansas?",
+      "a": "North Dakota",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states along the Mexico border have value lower than 0.05?",
+      "a": "California, Arizona, Texas",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state Wisconsin fall in?",
+      "a": "0.15 - 0.2",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of North Carolina is similar to its neighbouring state South Carolina.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "18402",
+    "image_variant": "with_annotations"
+  }
+}

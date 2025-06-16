@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-9",
+  "map_image": "mapwise-usa-9.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of Texas is similar to Minnesota.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: New York has a lower value than Maine and also have a higher value than Florida.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the N-most state that belongs to a higher value range compared to all its neighbours.",
+      "a": "New York",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States bordering the Great Lakes have lower values on average than California.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "How many states bordering Mexico have a value similar to Idaho?",
+      "a": "1",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Oklahoma has higher value than Maine.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state on the Canada border has the highest value?",
+      "a": "New York",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states New York, Florida, and Massachusetts in terms of the legend value in the East Coast region?",
+      "a": "Massachusetts < Florida < New York",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "9",
+    "image_variant": "with_annotations"
+  }
+}

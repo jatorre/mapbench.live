@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-11349",
+  "map_image": "mapwise-usa-11349.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states bordering Lake Michigan have the highest value?",
+      "a": "Wicsonsin, Michingan, Illinois",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California and Oregon are the pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Georgia is an outlier compared to other states in the east coast region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "3",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state along the Mexico border has the same value as Idaho?",
+      "a": "Texas",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the west coast region have a value in the range 21.1-35.8%?",
+      "a": "Oregon",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the lightest shade represent?",
+      "a": "38.2-42.4%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "11349",
+    "image_variant": "with_annotations"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "cf-imaginary-map-1342",
+  "map_image": "cf-imaginary-map-1342.png",
+  "context": "Counterfactual imaginary map - map",
+  "type": "choropleth_counterfactual",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What type of data pattern do you observe in this map?",
+      "a": "This is a imaginary counterfactual map",
+      "type": "short_answer"
+    }
+  ],
+  "metadata": {
+    "counterfactual_type": "imaginary",
+    "country": "map",
+    "original_map_id": "1342"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-4042",
+  "map_image": "mapwise-usa-4042.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the East Coast has the highest value?",
+      "a": "Virginia",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the Canada border has the lowest value?",
+      "a": "Washington",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the Great Lakes region has the highest value?",
+      "a": "Wisconsin",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Florida has the same value as Washington.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which pair of states belonging to the range 21-38% are the closest to each other?",
+      "a": "Virginia, Tennessee",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the lightest shade represent?",
+      "a": "2-7%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "4042",
+    "image_variant": "with_annotations"
+  }
+}

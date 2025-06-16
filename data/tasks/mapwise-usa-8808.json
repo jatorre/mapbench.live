@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-8808",
+  "map_image": "mapwise-usa-8808.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Name the North most state that belongs to a higher value range compared to all its neighbours.",
+      "a": "Washington",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: state Georgia has the highest value in the south east region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range in the west coast region?",
+      "a": "1937-6710",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: state California is an outlier compared to its neighbours.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the Northern most state in the range 550-1094.",
+      "a": "Minnesota",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Count the states with the values in range 1937-6710 in the east coast region.",
+      "a": "2",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Texas have a value higher than Indiana?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states California, Oregon, and Washington in terms of the legend value in the West Coast region?",
+      "a": "Oregon < Washington < California",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "8808",
+    "image_variant": "with_annotations"
+  }
+}

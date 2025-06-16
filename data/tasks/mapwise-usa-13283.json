@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-13283",
+  "map_image": "mapwise-usa-13283.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "How many states have a value similar to Texas?",
+      "a": "2",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the least value range in the west coast region?",
+      "a": "0-2M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: California is an outlier compared to other states in the west coast region.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Georgia is an outlier compared to other states in the east coast region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states along the Mexico border belong to the range 10-12M?",
+      "a": "Texas",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: California and Oregon are the pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states along the Canada border have values in range 14-16M.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state New York fall in?",
+      "a": "10M - 12M",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the states in the west coast region with the highest value.",
+      "a": "California",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "13283",
+    "image_variant": "with_annotations"
+  }
+}

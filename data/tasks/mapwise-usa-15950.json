@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-15950",
+  "map_image": "mapwise-usa-15950.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "60% - 117%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes/No: Oregon has a higher value than North Dakota and also a higher value than Illinois.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Florida have a value higher than Minnesota?",
+      "a": "0",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which range has the highest number of states?",
+      "a": "0% - 23%",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Oregon have the same value as Florida.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state bordering Wyoming has the same value as Nevada?",
+      "a": "Montana, Colorado",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Dakota is the northern most state that has a higher value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Nevada fall in range 60-117%?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California is an outlier compared to other states in the west coast region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "15950",
+    "image_variant": "with_annotations"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "mapwise-usa-20517",
+  "map_image": "mapwise-usa-20517.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "6.1% - 17.0%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the west coast region have a value higher than 12.7%?",
+      "a": "Oregon",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Dakota is the North most state that has a similar value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state has the second highest value along the west coast?",
+      "a": "California and Washington",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which range has the least number of states?",
+      "a": "6.1% - 8.0%",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Texas have the same value as New Mexico amongst the states along the Mexico border.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state along Canada borders only states from range 12.7-17%?",
+      "a": "Washington",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state Maine fall in?",
+      "a": "8.2% - 10.4%",
+      "type": "count",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "20517",
+    "image_variant": "with_annotations"
+  }
+}

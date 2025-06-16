@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-200",
+  "map_image": "mapwise-usa-200.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which range has the least number of states?",
+      "a": ">14k",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the Southern most state in the range 10-12k.",
+      "a": "Florida",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the western-most state that belongs to a different value range compared to all its neighbours.",
+      "a": "California",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does New York state fall in the range 8-10k?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the 2 states bordering California with similar values.",
+      "a": "Nevada, Oregon",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state bordering Lake Michigan has the same value to state Oklahoma?",
+      "a": "Indiana, Wisconsin",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states along the Canada border have a value similar to Florida?",
+      "a": "New York",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state Kansas is similar to its neighbouring state Texas.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "200",
+    "image_variant": "with_annotations"
+  }
+}

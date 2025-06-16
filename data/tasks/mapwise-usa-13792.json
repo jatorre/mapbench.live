@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-13792",
+  "map_image": "mapwise-usa-13792.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Texas has a higher value than New York, and also a higher than North Dakota.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which range has the least number of states?",
+      "a": ">200k",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Canada belong to range >200k?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does North Carolina have the same value asd Georgia mongst the east coast states.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering the great lakes have a value similar to Florida?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Mexico have a value similar to Florida?",
+      "a": "Texas",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New Mexico and Texas are a pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: a majority of states bordering Canada belong to range less than 50k.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "13792",
+    "image_variant": "with_annotations"
+  }
+}

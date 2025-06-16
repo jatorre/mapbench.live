@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-13",
+  "map_image": "mapwise-usa-13.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Maine fall in the lowest range?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state Texas fall in?",
+      "a": "0.15-0.2",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Georgia and South Carolina are a pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New York is the N-most state that has a higher value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Mexico have a value similar to Florida?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Maine has the highest value along the Canda border.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Montana, North Dakota, and Minnesota in terms of the legend value in the Canada Border region?",
+      "a": "North Dakota < Minnesota < Montana",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "13",
+    "image_variant": "with_annotations"
+  }
+}

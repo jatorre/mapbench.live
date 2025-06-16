@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-11175",
+  "map_image": "mapwise-usa-11175.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the second least value range in the west coast region?",
+      "a": "53-102",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Florida have the same value to state Georgia amongst the states in the south-east region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California is the western most state that has a lower value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Canada have a value higher than California?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has multiple distinct colours?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Carolina is an outlier compared to other states in its neighbouring region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Texas and Arkansas are a pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States bordering lake Superior have a higher value on average than states bordering Mexico.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "11175",
+    "image_variant": "with_annotations"
+  }
+}

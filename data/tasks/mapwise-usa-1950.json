@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-1950",
+  "map_image": "mapwise-usa-1950.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Does Florida have the most different value than Maine amongst the eastern coast states.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Florida is an outlier compared to other states bordering Atlantic ocean.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of California is similar to its neighbouring state Nevada.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts absolute values.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "0-4",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does Washington fall in?",
+      "a": "2-4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which class has the largest range of values?",
+      "a": "2-4",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "List the states bordering Lake Superior with the highest value.",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Maine is the northern-most state that has a similar value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "1950",
+    "image_variant": "with_annotations"
+  }
+}

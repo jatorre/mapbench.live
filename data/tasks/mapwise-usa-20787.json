@@ -1,0 +1,92 @@
+{
+  "id": "mapwise-usa-20787",
+  "map_image": "mapwise-usa-20787.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What value range does state Mississippi fall in?",
+      "a": "627600 - 960700",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour darkness inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states neighbouring New Mexico have a value lower than New York?",
+      "a": "Arizona, Colorado, Oklahoma",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "248200 - 588000",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state in the east coast borders at least two states from the range 13500-240200?",
+      "a": "Virginia",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering Florida have values in the same range.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state Utah is lower than its neighbouring state Arizona.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "13500 - 3412900",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the state on the west coast that belongs to a similar value range compared to atleast 2 of its neighbours.",
+      "a": "Oregon",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Tennessee fall in range 627,600 - 960,700?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "20787",
+    "image_variant": "with_annotations"
+  }
+}

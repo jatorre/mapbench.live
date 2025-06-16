@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-15117",
+  "map_image": "mapwise-usa-15117.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state has the least value among the states bordering Mexico?",
+      "a": "Arizona",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "3-5",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which class has the largest range of values?",
+      "a": "0",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states on the western coast have a value similar to state North Carolina?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bodering Kansas belong to range 3-5?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Missouri have the same value to state Utah.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Wyoming have a value higher than state Massachusetts?",
+      "a": "1",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "0-5",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Lake Superior have missing data?",
+      "a": "0",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "15117",
+    "image_variant": "with_annotations"
+  }
+}

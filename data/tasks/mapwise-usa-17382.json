@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-17382",
+  "map_image": "mapwise-usa-17382.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state North Dakota fall in?",
+      "a": "1696-9561",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "10,266-21,935",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New York and Connecticut are a pair of bordering states with the highest difference in range value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California is an outlier compared to other states bordering Pacific ocean.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering North Carolina have values in the same range.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Maine is the northern-most state that has a similar value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the Mexico border have a value lower than Washington?",
+      "a": "New Mexico",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of California is similar to its neighbouring state Nevada.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states California, Florida, and Texas in terms of the legend value in the Sun Belt region?",
+      "a": "California = Florida = Texas",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "17382",
+    "image_variant": "with_annotations"
+  }
+}

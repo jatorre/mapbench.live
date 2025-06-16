@@ -1,0 +1,19 @@
+{
+  "id": "cf-shuffled-map-5",
+  "map_image": "cf-shuffled-map-5.png",
+  "context": "Counterfactual shuffled map - map",
+  "type": "choropleth_counterfactual",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What type of data pattern do you observe in this map?",
+      "a": "This is a shuffled counterfactual map",
+      "type": "short_answer"
+    }
+  ],
+  "metadata": {
+    "counterfactual_type": "shuffled",
+    "country": "map",
+    "original_map_id": "5"
+  }
+}

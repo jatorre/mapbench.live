@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-7444",
+  "map_image": "mapwise-usa-7444.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state bordering Lake Superior has the highest value?",
+      "a": "Michigan",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the ranges in the legend equally sized?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which range has the highest number of states?",
+      "a": "0-107",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states borering California have a value higher than Illinois?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range in the east coast region?",
+      "a": "370-1035",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Mexico have a value higher than Washington?",
+      "a": "1",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts absolute values as opposed to percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Florida have a value similar to Texas?",
+      "a": "Georgia",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "7444",
+    "image_variant": "with_annotations"
+  }
+}

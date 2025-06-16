@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-18348",
+  "map_image": "mapwise-usa-18348.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range in the west coast region?",
+      "a": "54-62.6%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Minnesota is an outlier compared to other states bordering Canada.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which class has the largest range of values?",
+      "a": "37.1-52.9%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which range has the least number of states?",
+      "a": "37.1-52.9%",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the north east region has the similar valua as Montana?",
+      "a": "New York, Vermont, Massachusetts, Rhode Island",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the southern most state in the range 63.2-74%.",
+      "a": "Texas",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States in the west coast have lower values on average than states in the east coast.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state has the least value in the west coast?",
+      "a": "California",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "18348",
+    "image_variant": "with_annotations"
+  }
+}

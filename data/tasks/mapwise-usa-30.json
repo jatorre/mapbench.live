@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-30",
+  "map_image": "mapwise-usa-30.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of Ohio is lower than its neighbouring state West Virginia.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering the Great Lakes belong to the range 74400-93200?",
+      "a": "Illinois",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second darkest shade represent?",
+      "a": "74400-93200",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Montana and Wyoming are a pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state along the Canada border has the same value as Louisiana?",
+      "a": "Washington, Michigan, Ohio, Pennsylvania",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does Florida fall in?",
+      "a": "134900-293900",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering Montanahave values in range 3800-31500",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has multiple distinct colours?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "List the state bordering New Mexico with the highest value.",
+      "a": "Texas",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Maine, Georgia, and Florida in terms of the legend value in the East Coast region?",
+      "a": "Maine < Georgia < Florida",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "30",
+    "image_variant": "with_annotations"
+  }
+}

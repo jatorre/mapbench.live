@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-12430",
+  "map_image": "mapwise-usa-12430.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which value range does Colorado fall in?",
+      "a": "245-514",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Texas have a value similar to Nevada?",
+      "a": "3",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state to the west of Idaho has the highest value?",
+      "a": "California",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does New York have a value above 865?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the northern-most state in the range 40-243.",
+      "a": "Alaska",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legend ranges evenly sized?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the Colorado is similar to South Carolina.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the west coast belong to range 245-514?",
+      "a": "Oregon",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Florida is similar to its neighbouring state Georgia.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New York is an outlier compared to other states bordering Canada.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "12430",
+    "image_variant": "with_annotations"
+  }
+}

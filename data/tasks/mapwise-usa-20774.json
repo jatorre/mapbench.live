@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-20774",
+  "map_image": "mapwise-usa-20774.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What value range does New Mexico fall in?",
+      "a": "0.055-0.06",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Canada have a value higher than 0.05?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New Mexico and Utah are the pair of bordering states with the highest difference.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does New Hampshire fall in range 0.035-0.04?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the 3 states with values greater than 0.05.",
+      "a": "New Mexico, West Virginia, Delaware",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": ">0.06",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Mexico have a value similar to Georgia?",
+      "a": "Arizona",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Delaware is the eastern most state that has a higher value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of Wyoming is higher than its neighbouring state Nebraska.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: All the west coast states belong to range 0.035-0.04.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "20774",
+    "image_variant": "with_annotations"
+  }
+}

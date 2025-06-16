@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-4",
+  "map_image": "mapwise-usa-4.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the East Coast region has the lowest value?",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Mexico have a value similar to Minnesota?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state in the west coast has the same value as Louisiana?",
+      "a": "California, Oregon",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States bordering Canada have lower values on average than states bordering Mexico.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which range has the least number of states?",
+      "a": "<0.3",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": ">0.45",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "4",
+    "image_variant": "with_annotations"
+  }
+}

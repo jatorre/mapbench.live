@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-7299",
+  "map_image": "mapwise-usa-7299.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour darkness is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state bordering the Great Lakes region has the lowest value?",
+      "a": "Minnesota",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legend categories evenly sized?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the Michigan is higher than Florida.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend only has different shades of the same colour?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state bordering Mexico belongs to the highest value range?",
+      "a": "",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Canada have a value similar to South Carolina?",
+      "a": "Washington, Idaho, Minnesota, ",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Arizona is the western most state that has a similar value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states in the west coast have values below 350.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "7299",
+    "image_variant": "with_annotations"
+  }
+}

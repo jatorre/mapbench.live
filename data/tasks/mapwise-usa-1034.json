@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-1034",
+  "map_image": "mapwise-usa-1034.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: Minnesota has the highest value along the Canada border.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does California fall in range 0.4-0.45?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states along the Mexico border have a value similar to Alaska?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of North Dakota is similar to its neighbouring state South Dakota.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the Northmost state in the range 0.4-0.45.",
+      "a": "Minnesota",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the Southmost state that belongs to a higher value range compared to all its neighbours.",
+      "a": "Florida",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Texas and Oklahoma are the pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "1034",
+    "image_variant": "with_annotations"
+  }
+}

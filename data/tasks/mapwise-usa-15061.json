@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-15061",
+  "map_image": "mapwise-usa-15061.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "How many states along the west coast have a value higher than New York?",
+      "a": "2",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state in the range 44000-130400 doesn't border any states from 9000-17900?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "1700-130400",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does Florida fall in?",
+      "a": "23,300",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the southernmost state that belongs to a similar range as all its neighbours.",
+      "a": "Ohio",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Canada have a value lower than 8200?",
+      "a": "Minnesota, New York",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Arizona belong to range 1700-8200?",
+      "a": "Colorado",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "1700-8200",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "15061",
+    "image_variant": "with_annotations"
+  }
+}

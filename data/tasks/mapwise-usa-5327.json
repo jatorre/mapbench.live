@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-5327",
+  "map_image": "mapwise-usa-5327.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of the state South Dakota is lower than its neighbouring state North Dakota.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "Nevada, Idaho",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Iowa come under the value below 300?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Arkansas fall in range 379-469?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "5",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "276-373",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States bordering Georgia have higher values on average than states bordering Arizona.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "276-835",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the least value range among the states bordering Lake Superior?",
+      "a": "276-373",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "5327",
+    "image_variant": "with_annotations"
+  }
+}

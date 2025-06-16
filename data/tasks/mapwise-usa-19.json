@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-19",
+  "map_image": "mapwise-usa-19.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: Texas has the least value in the southern region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Florida have the same value as New York amongst the east coast states?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: a majority of states bordering Canada belong to range 5,69,400-3,030,400.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New York is the northern-most state that has a higher value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which is the Northern most state with a value in the highest range?",
+      "a": "New York",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Idaho has higher value than Iowa.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state California fall in?",
+      "a": "12,491,200-38,441,400",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the west coast has the lowest value?",
+      "a": "Oregon",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are there significant gaps between certain ranges the legend?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states California, Arizona, and New Mexico in terms of the legend value in the Mexico Border region?",
+      "a": "New Mexico < Arizona < Texas",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "19",
+    "image_variant": "with_annotations"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-2769",
+  "map_image": "mapwise-usa-2769.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the East Coast has the highest value?",
+      "a": "Massachusetts, Rhode Island, New York, New Jersey",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New York has the same value as Florida.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Count the states with the values in range 3%-7% in the east coast.",
+      "a": "4",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Missouri have the same value to state Utah.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: state Maine is an outlier compared to other states in the north-east region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state Florida is higher to state Idaho.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the Southern most state in the range 3-7%.",
+      "a": "Florida",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which range has the highest number of states?",
+      "a": "0-2%",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "2769",
+    "image_variant": "with_annotations"
+  }
+}

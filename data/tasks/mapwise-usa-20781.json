@@ -1,0 +1,62 @@
+{
+  "id": "mapwise-usa-20781",
+  "map_image": "mapwise-usa-20781.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the West Coast has the highest value?",
+      "a": "Washington",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Alaska come in the range 30.1 - 34.2?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Rhode Island has the same value as Washington.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does North Carolina have the same value as Florida in the east coast region.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Canada have a value similar to Utah?",
+      "a": "2",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the state west to New York in the range 20.2-22.9%.",
+      "a": "Alaska, South Dakota",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "20781",
+    "image_variant": "with_annotations"
+  }
+}

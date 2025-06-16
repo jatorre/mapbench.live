@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-8576",
+  "map_image": "mapwise-usa-8576.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the East Coast has the highest value?",
+      "a": "Florida, Massachusetts, Virginia",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which class has the largest range of values?",
+      "a": "0-37,719",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state in range 301325-766290 borders at least 3 states from range 0-37719?",
+      "a": "New York",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California has the highest value on the west coast",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range along Mexico border?",
+      "a": "143202-296255",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Michigan fall in range 301325-766290?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "0-766290",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has multiple distinct colours?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced ?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "8576",
+    "image_variant": "with_annotations"
+  }
+}

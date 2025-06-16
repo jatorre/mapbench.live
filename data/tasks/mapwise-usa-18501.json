@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-18501",
+  "map_image": "mapwise-usa-18501.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the east coast has the highest value?",
+      "a": "New York, Florida",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "64200 - 131600",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state along the Mexico border has the same value as Idaho?",
+      "a": "New Mexico",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States bordering the Great Lakes have lower values on average than states bordering Great Salt Lake.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the east coast region have a value same as Texas?",
+      "a": "New York, Florida",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes/No: New York has a higher value than West Virginia and also have a higher value than Colorado.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does South Carolina fall in the range 138100-228700?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Canada have a value similar to Texas?",
+      "a": "1",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "18501",
+    "image_variant": "with_annotations"
+  }
+}

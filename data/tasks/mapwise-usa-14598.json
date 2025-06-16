@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-14598",
+  "map_image": "mapwise-usa-14598.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Does Florida have the same value to Georgia amongst the states in the south-east region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is least value range in the West coast?",
+      "a": "308-444",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering Florida have values in the same range.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of New York is similar to New Jersey.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Iowa is higher than its neighbouring state Illinois.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does New York have the same range value as North Dakota?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "564-862",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the northern most state in the highest range.",
+      "a": "North Dakota",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "List the southern most state with the value in lowest range.",
+      "a": "Texas",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "14598",
+    "image_variant": "with_annotations"
+  }
+}

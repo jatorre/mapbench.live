@@ -1,0 +1,23 @@
+{
+  "id": "weather-madrid-2024-06",
+  "map_image": "weather_madrid_2024_06.png",
+  "context": "Weather forecast for Madrid on June 12, 2024",
+  "type": "weather",
+  "questions": [
+    {
+      "q": "What is the temperature expected in Madrid?",
+      "a": "Around 30°C",
+      "type": "short_answer"
+    },
+    {
+      "q": "Is rain expected in the region?",
+      "a": "Yes, in the northeast quadrant",
+      "type": "short_answer"
+    },
+    {
+      "q": "What is the wind direction shown on the map?",
+      "a": "Southwest to Northeast",
+      "type": "short_answer"
+    }
+  ]
+}

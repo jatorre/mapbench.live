@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-2632",
+  "map_image": "mapwise-usa-2632.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "<50k - >200k",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States bordering Wyoming have similar values on average than states bordering Maine.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states bordering Canada have values below 100k.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which range has the least number of states?",
+      "a": "150k-200k",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Illinois fall in range 100-150k?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of New Jersey is similar to North Carolina.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Ohio, Michigan, and Wisconsin in terms of the legend value in the Midwest region?",
+      "a": "Wisconsin < Michigan < Ohio",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "2632",
+    "image_variant": "with_annotations"
+  }
+}

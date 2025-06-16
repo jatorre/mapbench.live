@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-12788",
+  "map_image": "mapwise-usa-12788.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Rhode Island has the same value as Utah.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states along the Canada border have value similar to Arizona",
+      "a": "3",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which is the westernmost state that borders at least two states from the highest range?",
+      "a": "Nevada",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has multiple distinct colours?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which pair of states belonging to the highest range are the closest to each other along the Mexico border?",
+      "a": "California, Texas",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "10.9-35.3%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: a majority of states bordering Mexico have values greater than North Dakota.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Maine is the Northern-most state that has a lower value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "15.9-21%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "12788",
+    "image_variant": "with_annotations"
+  }
+}

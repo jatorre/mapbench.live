@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-340",
+  "map_image": "mapwise-usa-340.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which class has the largest range of values?",
+      "a": "5% - 7%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Colorado is higher than New York.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of  Florida is lower than Texas.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States bordering Texas have similar values on average to states bordering Louisiana.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the Mexico border belong to range 5-7%?",
+      "a": "California, Texas, New Mexico",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the Canada border belong to range 5-7%?",
+      "a": "Montana, New York",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New Mexico and Colorado are the pair of bordering states along the West Coast with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which range has the least number of states?",
+      "a": "2%",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: California has the highest value along the west coast.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states California, Oregon, and Alaska in terms of the legend value in the West Coast region?",
+      "a": "Alaska < Oregon < California",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "340",
+    "image_variant": "with_annotations"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-8391",
+  "map_image": "mapwise-usa-8391.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Does New York fall in range 1.2-1.4 M?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "0.2M - 1.6M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts absolute values.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of Nevada is greater than Washington.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name easternmost state with a value > 1M.",
+      "a": "Florida",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state has the same value as Florida?",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the northern most state that belongs to a higher range compared to all its neighbours.",
+      "a": "New York",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state bordering Lake Huron have a value higher than New York?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states along the Canada border belong to range 1.2-1.4M?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states along the Mexico border have a value higher than Washington?",
+      "a": "Californa, Texas",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "8391",
+    "image_variant": "with_annotations"
+  }
+}

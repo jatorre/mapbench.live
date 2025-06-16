@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-1280",
+  "map_image": "mapwise-usa-1280.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes/No: Kentucky has a similar value as Virginia and also have a similar value as Illinois.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "6.8% - 15.9%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Minnesota is the northern-most state that has a similar value compared to all its neighbours.",
+      "a": "Yes",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "14-15.9%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the lightest shade represent?",
+      "a": "6.8-9.7%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the N-most state in the range 14-15.9%.",
+      "a": "Idaho",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "List the state without any international border with the highest value.",
+      "a": "Missouri",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state has the second highest value along the Canada border?",
+      "a": "Washington",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Mexico belong to range 9.9-11.8%?",
+      "a": "California",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states New York, Pennsylvania, and New Jersey in terms of the legend value in the Atlantic region?",
+      "a": "New York < New Jersey < Pennsylvania",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "1280",
+    "image_variant": "with_annotations"
+  }
+}

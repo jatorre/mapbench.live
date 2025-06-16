@@ -1,0 +1,68 @@
+{
+  "id": "mapwise-usa-7432",
+  "map_image": "mapwise-usa-7432.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of the state Maine is lower than Florida.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state Texas fall in?",
+      "a": "1-2.1%",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Oklahoma has the least value among the states bordering Texas.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the easternmost state that belongs to a higher value range compared to all its neighbours.",
+      "a": "Oklahoma",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: a majority of states in the American south region belong to range 1-2.1%.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does Oregon fall in?",
+      "a": "3.50%",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Oklahoma is an outlier compared to other inland states.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the western most state in the range 1-2.1%.",
+      "a": "California",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "7432",
+    "image_variant": "with_annotations"
+  }
+}

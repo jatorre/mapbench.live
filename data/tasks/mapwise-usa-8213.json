@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-8213",
+  "map_image": "mapwise-usa-8213.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "How many states bordering California have a value higher than Texas?",
+      "a": "0",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Massachusetts has the least value in the east coast region.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Mexico belong to range > 0.3?",
+      "a": "Texas",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states on the west coast have values above 0.2",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Michigan fall in range 0.25-0.3?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Name the state on the east coast that belongs to a higher value range compared to all its neighbours.",
+      "a": "Florida",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: New Mexico is the southern-most state that has a higher value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering North Dakota have a value similar to Maine?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "8213",
+    "image_variant": "with_annotations"
+  }
+}

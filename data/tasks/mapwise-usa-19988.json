@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-19988",
+  "map_image": "mapwise-usa-19988.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of the state Texas is same as its neighbouring state Arkansas.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Iowa fall in range 200 - 400?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": ">1200",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state Mississippi fall in?",
+      "a": "0-200",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states in west coast region belong to the lowest range?",
+      "a": "California",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Canada have a value higher than California?",
+      "a": "Montana, Minnesota",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Oregon has the highest value in the west coast.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the map depicts percentages.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does Texas fall in the range 200-400?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "19988",
+    "image_variant": "with_annotations"
+  }
+}

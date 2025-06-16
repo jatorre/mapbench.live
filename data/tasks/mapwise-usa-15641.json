@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-15641",
+  "map_image": "mapwise-usa-15641.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering Lake Huron have the highest value?",
+      "a": "Michigan",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state along the east coast in the second least range borders atleast 2 states from the lowest range?",
+      "a": "Pennsylvania, Vermont, Delaware",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the western-most state that belongs to a lower value range compared to all its neighbours.",
+      "a": "California",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the Mexico border belong to the range 15.4-21.8?",
+      "a": "Arizona, New Mexico",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which pair of states on the Canada border belonging to the highest range are the closest to each other?",
+      "a": "Idaho, Montana",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "5.4-21.8",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state bordering Lake Superior has the same value as New York?",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: Iowa and Missouri are the pair of bordering states with the highest difference.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "15641",
+    "image_variant": "with_annotations"
+  }
+}

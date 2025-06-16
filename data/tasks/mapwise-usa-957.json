@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-957",
+  "map_image": "mapwise-usa-957.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: all states bordering North Carolina have values in the same range.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Connecticut has a higher value than Idaho and also have a similar value as Oklahoma.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Florida has the highest value on the east coast.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the states along the Mexico border in the highest value range.",
+      "a": "",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state in the west coast region has the same value to state Illinois?",
+      "a": "California, Washington",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Are the legends evenly spaced ?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the west coast states with the lowest values.",
+      "a": "California, Washington",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Virginia and Maryland are a pair of bordering states with the same value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Illinois, Indiana, and Iowa in terms of the legend value in the Midwest region?",
+      "a": "Iowa < Indiana < Illinois",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "957",
+    "image_variant": "with_annotations"
+  }
+}

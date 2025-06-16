@@ -1,0 +1,86 @@
+{
+  "id": "mapwise-usa-1267",
+  "map_image": "mapwise-usa-1267.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "List the states in the east coast with highest values",
+      "a": "New York and Florida",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states on the West coast have a vlue lower than 0.5 million?",
+      "a": "Oregon",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering Canada have a value higher than California?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour darkness inversely proportional to the value.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state Maine is higher to state Louisiana.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states have missing data?",
+      "a": "",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state in the east coast region has value similar to Florida?",
+      "a": "New York",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which state has the highest value in the west coast region?",
+      "a": "California",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does state Montana fall in the same legend marking range as Maine?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes/No: Illinois has a similar value as Texas and also have a higher value than Nevada.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Washington, Oregon, and Idaho in terms of the legend value in the Pacific Northwest region?",
+      "a": "Idaho < Oregon < Washington",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "1267",
+    "image_variant": "with_annotations"
+  }
+}

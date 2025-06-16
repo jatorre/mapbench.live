@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-9071",
+  "map_image": "mapwise-usa-9071.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which state on the Canada border has the highest value?",
+      "a": "Washington",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does New York fall in range above 30?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state Massachusetts is similar to its neighbouring state Connecticut.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: a majority of states bodering Canada belong to the highest range.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: North Carolina is the Eastern most state that has a higher value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state has the highest value in the west coast region?",
+      "a": "California",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state New York is higher than its neighbouring state Pennsylvania.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which pair of states belonging to the range 75-207 are the closest to each other?",
+      "a": "New York, New Jersey",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Texas have the same value as New Mexico amongst the states along the Mexico border.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of Illinois is the same as Indiana.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "9071",
+    "image_variant": "with_annotations"
+  }
+}

@@ -1,0 +1,29 @@
+# Model Registry for MapBench.Live
+# Add new models here to trigger benchmark evaluations
+
+models:
+  - id: gpt-4o
+    provider: openai
+    endpoint: "openai:gpt-4o"
+    auth: "env:OPENAI_API_KEY"
+    description: "OpenAI GPT-4o with vision capabilities"
+    
+  - id: gpt-4o-mini
+    provider: openai
+    endpoint: "openai:gpt-4o-mini"
+    auth: "env:OPENAI_API_KEY"
+    description: "OpenAI GPT-4o mini - faster, more cost-effective"
+    
+  - id: gemini-2-flash
+    provider: vertexai
+    model: "gemini-2.0-flash-exp"
+    region: "us-central1"
+    auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
+    description: "Google Gemini 2.0 Flash - experimental"
+    
+  - id: gemini-1-5-pro
+    provider: vertexai
+    model: "gemini-1.5-pro-002"
+    region: "us-central1"
+    auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
+    description: "Google Gemini 1.5 Pro with vision"

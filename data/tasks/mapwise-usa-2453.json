@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-2453",
+  "map_image": "mapwise-usa-2453.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States on Canada border have higher values on average than states on the east coast.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the least value range along the Canada border?",
+      "a": "55.1-60.3%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the Mexico border have a value lower than Washington?",
+      "a": "Arizona, New Mexico, and Texas",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Missouri have a value similar to Connecticut?",
+      "a": "3",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does the second lightest shade represent?",
+      "a": "55.1-60.3%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the west coast has the same value as South Carolina?",
+      "a": "California",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which pair of states belonging to the lowest range are the closest to each other?",
+      "a": "Arizona, New Mexico, and Texas",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the western most state in the highest range.",
+      "a": "Utah",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states along the Canada border belong to range 55.1-60.3%?",
+      "a": "Idaho, Montana, Maine",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Utah, Nevada, and Colorado in terms of the legend value in the Mountain States region?",
+      "a": "Nevada < Colorado < Utah",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "2453",
+    "image_variant": "with_annotations"
+  }
+}

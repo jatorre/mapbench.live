@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-20746",
+  "map_image": "mapwise-usa-20746.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of the state South Dakota is lower than its neighbouring state Montana.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which is the westernmost state with a value in the range 0.1-0.2?",
+      "a": "California",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which is the northern most state with a value in the range 0.4-0.5?",
+      "a": "Montana",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state North Dakota fall in?",
+      "a": "0.8-0.9",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: Maine is the northmost state that has a similar value compared to all its neighbours.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Which states bordering the Great Lakes have a value in the range 0.7-0.8?",
+      "a": "Minnesota",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: a majority of states in the west coast region belong to range 0.1-0.2.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "List the state bordering Canada with the highest value.",
+      "a": "North Dakota",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "20746",
+    "image_variant": "with_annotations"
+  }
+}

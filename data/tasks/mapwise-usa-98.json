@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-98",
+  "map_image": "mapwise-usa-98.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes/No: North Carolina has a similar value as Michigan and also have a similar value as California.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: States of west region have similar values on average to eastern coast states.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state Florida is higher to state Idaho.",
+      "a": "Yes",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What is the second highest value range in the legend?",
+      "a": "2.5M - 3M",
+      "type": "range_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the legend has multiple distinct colours?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "What value range does state West Virginia fall in?",
+      "a": "< 0.5M",
+      "type": "count",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: the value of the state Texas is higher than its neighbouring state Louisiana.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Does California fall in range above 2.5M?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Continuous",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Yes or no: California is an outlier compared to other states in its neighbouring region.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "continuous"
+    },
+    {
+      "q": "Rank the states Illinois, Indiana, and Ohio in terms of the legend value in the Great Lakes region?",
+      "a": "Indiana < Ohio < Illinois",
+      "type": "single_answer",
+      "legend_type": "continuous"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "98",
+    "image_variant": "with_annotations"
+  }
+}

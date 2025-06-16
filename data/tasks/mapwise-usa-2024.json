@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-2024",
+  "map_image": "mapwise-usa-2024.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "What value range does the darkest shade represent?",
+      "a": "10.6-12.5%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Canada have a value lower than New Mexico?",
+      "a": "6",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which class has the largest range of values?",
+      "a": "4-9.2%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does New Hampshire fall in?",
+      "a": "10.6-12.5%",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New Mexico has the highest value along the Mexico border.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states bordering New York belong to range 10.6-12.5%?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the eastern-most state that belongs to a higher value range compared to all its neighbours.",
+      "a": "New Hampshire",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "4-12.5%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Texas fall in the range 9.4-10.5%?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states Kansas, Nebraska, and Oklahoma in terms of the legend value in the Great Plains region?",
+      "a": "Kansas = Nebraska < Oklahoma",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "2024",
+    "image_variant": "with_annotations"
+  }
+}

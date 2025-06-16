@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-10121",
+  "map_image": "mapwise-usa-10121.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: the value of the state Pennsylvania is lower than its neighbouring state New York.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the second least value range in the west coast region?",
+      "a": "161-390",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does state Montana fall in the same range as Maine?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the value of the state Maine is higher to state Louisiana.",
+      "a": "No",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state in the north-east region borders at least two states from the highest range?",
+      "a": "Pennsylvania",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the western-most state that belongs to a similar value range compared to atleast 2 of its neighbours.",
+      "a": "Nevada",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Are the legends evenly spaced ?",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the range of Utah is lower than its neighbouring state Arizona.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering Florida have values in the same range.",
+      "a": "No",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "10121",
+    "image_variant": "with_annotations"
+  }
+}

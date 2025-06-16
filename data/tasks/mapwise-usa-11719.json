@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-11719",
+  "map_image": "mapwise-usa-11719.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states bordering Lake Michigan have the highest value?",
+      "a": "Indiana",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What value range does state Florida fall in?",
+      "a": "1.6-2.3%",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: States on west coast have higher values on average than states on the east coast.",
+      "a": "No",
+      "type": "count",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Florida have the most different value than Maine amongst the eastern coast states.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: in the legend the colour intensity is directly proportional to the value.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which pair of states belonging to the highest range are the closest to each other?",
+      "a": "Virginia, North Carolina",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many states bordering Missouri have a value similar to Connecticut?",
+      "a": "2",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the least value range along the Canada border?",
+      "a": "0.4-0.9%",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: the legend has different shades of the same colour?",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "11719",
+    "image_variant": "with_annotations"
+  }
+}

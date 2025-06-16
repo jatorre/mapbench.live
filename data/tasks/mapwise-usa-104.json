@@ -1,0 +1,80 @@
+{
+  "id": "mapwise-usa-104",
+  "map_image": "mapwise-usa-104.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Which states in the west coast region belong to the highest range?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the west coast region belong to the second highest range?",
+      "a": "Washington, Oregon",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the west coast region belong to the lowest range?",
+      "a": "",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which states in the east coast region belong to the highest range?",
+      "a": "Florida, Georgia, New York",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "List the states along the Canada border with the highest values.",
+      "a": "New york",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the N-most state in the range 6.8-10.5.",
+      "a": "Maine",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the overall range of the legend?",
+      "a": "2.4 - 25.3",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "What is the highest value range in the region aroung the Great Lakes?",
+      "a": "14.8 - 25.3",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state in the highest range borders at least 1 state with missing data?",
+      "a": "Nevada",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Idaho have the same value as Wisconsin.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Rank the states North Carolina, South Carolina, and Virginia in terms of the legend value in the East Coast region?",
+      "a": "South Carolina < Virginia < North Carolina",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "104",
+    "image_variant": "with_annotations"
+  }
+}

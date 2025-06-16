@@ -1,0 +1,74 @@
+{
+  "id": "mapwise-usa-7502",
+  "map_image": "mapwise-usa-7502.png",
+  "context": "Choropleth map of USA",
+  "type": "choropleth",
+  "source": "mapwise",
+  "questions": [
+    {
+      "q": "Yes or no: New York has the same value as Texas.",
+      "a": "Yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the East Coast has the highest value?",
+      "a": "New York",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Does Florida have a different value than South Carolina amongst the states in the southeast region.",
+      "a": "No",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: New York and Vermont are a pair of bordering states with the highest difference.",
+      "a": "yes",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Name the northern-most state that belongs to a similar value range compared to all its neighbours.",
+      "a": "Maine",
+      "type": "yes_no",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Is the legend discrete or continuous?",
+      "a": "Discrete",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which state on the west coast has the same value as Connecticut?",
+      "a": "Washington",
+      "type": "range_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Yes or no: all states bordering Utah have values in range 233831-149806360.",
+      "a": "Yes",
+      "type": "list_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "Which pair of states belonging to the range 419,716,094-665,088,579 are the closest to each other?",
+      "a": "New Jersey, Pennsylvania, Ohio",
+      "type": "single_answer",
+      "legend_type": "discrete"
+    },
+    {
+      "q": "How many distinct categories does the legend contain?",
+      "a": "4",
+      "type": "count",
+      "legend_type": "discrete"
+    }
+  ],
+  "metadata": {
+    "country": "usa",
+    "original_map_id": "7502",
+    "image_variant": "with_annotations"
+  }
+}
