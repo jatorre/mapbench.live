@@ -149,7 +149,7 @@ export default function Home() {
                     <p className="text-sm text-blue-700">
                       <strong>Based on MapWise Research:</strong> This benchmark implements the methodology from 
                       <a href="https://github.com/map-wise/mapwise-dataset" className="underline hover:text-blue-900 ml-1" target="_blank" rel="noopener noreferrer">
-                        "MapWise: Evaluating Vision-Language Models for Advanced Map Queries"
+                        &ldquo;MapWise: Evaluating Vision-Language Models for Advanced Map Queries&rdquo;
                       </a>
                       , using their curated dataset of real-world geographic visualizations.
                     </p>
@@ -193,7 +193,7 @@ export default function Home() {
                   </div>
                   <p className="text-gray-600 mb-3">{task.description}</p>
                   <div className="bg-gray-50 p-3 rounded italic text-sm text-gray-700">
-                    Example: "{task.example}"
+                    Example: &ldquo;{task.example}&rdquo;
                   </div>
                 </div>
               ))}
