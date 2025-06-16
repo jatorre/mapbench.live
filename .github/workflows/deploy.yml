@@ -20,12 +20,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        cache: 'npm'
-        cache-dependency-path: app/package-lock.json
     
     - name: Install dependencies
       working-directory: ./app
-      run: npm ci
+      run: npm install
     
     - name: Build website
       working-directory: ./app
@@ -37,5 +35,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./app/dist
-        cname: mapbench.live
+        publish_dir: ./app/out
