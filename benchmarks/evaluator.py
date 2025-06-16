@@ -213,3 +213,4 @@ async def run_benchmark(model_ids: Optional[List[str]] = None,
 if __name__ == "__main__":
     # Example: Run benchmark for specific models
     # asyncio.run(run_benchmark(model_ids=["gpt-4o", "gpt-4o-mini"]))
+    pass
