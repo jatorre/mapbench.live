@@ -16,29 +16,33 @@ export default function Leaderboard() {
 
   useEffect(() => {
     // Load real leaderboard data
+    console.log('Attempting to fetch leaderboard data...')
     fetch('/mapbench.live/data/results/leaderboard_latest.json')
       .then(response => {
+        console.log('Fetch response:', response.status, response.statusText)
         if (!response.ok) {
-          throw new Error('Failed to load leaderboard data');
+          throw new Error(`Failed to load leaderboard data: ${response.status}`);
         }
         return response.json();
       })
       .then(data => {
+        console.log('Loaded leaderboard data:', data)
         setLeaderboard(data)
         setLoading(false)
       })
       .catch(error => {
         console.error('Error loading leaderboard:', error)
+        console.log('Falling back to demo data due to fetch error')
         // Fallback to demo data if real data fails to load
         const mockData: LeaderboardEntry[] = [
           {
             rank: 1,
-            model_id: "gpt-4o-mini-test",
-            overall_score: 85.0,
+            model_id: "gpt-4o-mini-test (DEMO)",
+            overall_score: 76.7,
             total_questions: 30,
             last_updated: new Date().toISOString(),
-            score_choropleth: 87.0,
-            score_weather: 83.0
+            score_choropleth: 80.0,
+            score_weather: 73.3
           }
         ]
         setLeaderboard(mockData)
