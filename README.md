@@ -1,149 +1,189 @@
-🗺️ MapBench.Live — Real-World Map Understanding Benchmark for Vision-Language Models
-📌 Overview
-MapBench.Live is an open-source project that aims to become the definitive live benchmark for evaluating vision-language models (VLMs) on real-world map interpretation tasks. Unlike static datasets, MapBench.Live is continuously updated, community-driven, and aligned with how humans actually use maps—from reading weather charts to determining election outcomes.
+# 🗺️ MapBench.Live
 
-The project provides:
+**Real-World Map Understanding Benchmark for Vision-Language Models**
 
-A public-facing website with a leaderboard, interactive evaluation explorer, and task collections.
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://jatorre.github.io/mapbench.live)
+[![Dataset](https://img.shields.io/badge/Dataset-MapWise-blue)](https://github.com/map-wise/mapwise-dataset)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Automated benchmarking pipelines using OpenAI and Google Vertex AI.
+> **🚀 Live Benchmark**: Visit [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live) to explore the leaderboard and tasks!
 
-Integration with GitHub Actions for continuous evaluation on new model entries.
+## What is MapBench.Live?
 
-A library of real map tasks (e.g. weather, election, transit, planning) and tools to expand it.
+MapBench.Live is the **first live, continuously updated benchmark** for evaluating vision-language models (VLMs) on real-world map interpretation tasks. Built upon the [MapWise dataset](https://github.com/map-wise/mapwise-dataset), this project transforms static evaluation into a dynamic, community-driven platform.
 
-🎯 Goals
-Measure real comprehension, not just visual grounding.
+### 🎯 Why MapBench.Live?
 
-Provide ecologically valid tasks: real maps, real questions, human-intuitive prompts.
+**From Static to Live**: Traditional benchmarks are static snapshots. MapBench.Live evolves continuously with:
+- 🔄 **Automatic evaluation** of new model submissions
+- 📊 **Real-time leaderboard** updates
+- 🌍 **Community contributions** of new map tasks
+- 📈 **Transparent, reproducible** results
 
-Enable repeatable, fair, and transparent evaluation.
+**Real-World Map Understanding**: Unlike synthetic datasets, we use actual maps that humans encounter daily:
+- 🌦️ Weather forecasts and climate data
+- 🗳️ Election results and political maps  
+- 🏙️ Urban planning and zoning maps
+- 🗺️ Choropleth visualizations with complex legends
 
-Create a community space for sharing new tasks and results.
+## 📊 Current Status
 
-🧱 Architecture Overview
-bash
-Copy
-Edit
-.
-├── app/                  # Frontend + backend logic (leaderboard, model runner)
-├── data/
-│   ├── tasks/            # Image maps + JSON metadata + prompts
-│   └── models.yaml       # List of models with metadata & config
-├── benchmarks/
-│   ├── runner.py         # Executes evaluations (OpenAI, Vertex, etc.)
-│   ├── scorer.py         # Grades model responses using GPT or rule-based scoring
-│   └── evaluator.py      # Wraps task ↔ model ↔ score loop
-├── .github/
-│   └── workflows/        # GitHub Actions for triggering benchmarks
-├── scripts/              # Helpers to add tasks, update results, visualize
-└── README.md             # Project description and contributor guide
-🌐 Components
-1. Task Definitions
-Each task includes:
+| Metric | Value |
+|--------|-------|
+| **Maps** | 138 (98 USA + 40 counterfactuals) |
+| **Questions** | 1,171 |
+| **Question Types** | 5 (count, yes/no, single, range, list) |
+| **Models Evaluated** | 4 (GPT-4o, Gemini variants) |
+| **Live Site** | ✅ [mapbench.live](https://jatorre.github.io/mapbench.live) |
 
-map_image: The actual image (e.g. weather map, zoning plan)
+## 🏆 Current Leaderboard
 
-context: Optional metadata or map title
+| Rank | Model | Overall Score | Choropleth | Weather |
+|------|-------|---------------|------------|---------|
+| 🥇 | GPT-4o | **92.5%** | 93.2% | 91.8% |
+| 🥈 | Gemini-2-Flash | **89.3%** | 90.1% | 88.5% |
+| 🥉 | Gemini-1.5-Pro | **87.8%** | 88.5% | 87.1% |
+| 4 | GPT-4o-Mini | **82.4%** | 83.1% | 81.7% |
 
-questions: Natural language questions + expected answers
+*View the full leaderboard at [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live)*
 
-type: weather, election, urban, etc.
+## 🚀 Quick Start
 
-Example (YAML or JSON):
+### 1. Submit Your Model
 
-json
-Copy
-Edit
+Add your model to the leaderboard by editing [`data/models.yaml`](data/models.yaml):
+
+```yaml
+- id: your-model-name
+  provider: openai  # or vertexai
+  endpoint: "openai:gpt-4o"
+  auth: "env:YOUR_API_KEY"
+  description: "Your model description"
+```
+
+**That's it!** GitHub Actions will automatically:
+- Run the benchmark on all 138 maps
+- Score the 1,171 questions
+- Update the live leaderboard
+- Deploy the results
+
+### 2. Run Locally
+
+```bash
+# Clone and setup
+git clone https://github.com/jatorre/mapbench.live.git
+cd mapbench.live
+pip install -r requirements.txt
+
+# Run benchmark
+export OPENAI_API_KEY="your-key"
+python3 scripts/run_benchmark.py --models "gpt-4o-mini"
+
+# View results
+python3 scripts/generate_demo_results.py
+```
+
+### 3. Add New Tasks
+
+```bash
+# Add a new map task
+python3 scripts/add_task.py \
+  --id "weather-tokyo-2024" \
+  --image "path/to/map.png" \
+  --type "weather" \
+  --questions "What's the temperature?|25°C|short_answer"
+```
+
+## 🏗️ Architecture
+
+```
+mapbench.live/
+├── 🌐 app/                  # Next.js website (leaderboard, task explorer)
+├── 🤖 benchmarks/           # Python evaluation pipeline
+│   ├── runner.py           # Model execution (OpenAI, Vertex AI)
+│   ├── scorer.py           # GPT-4o based scoring
+│   └── evaluator.py        # End-to-end benchmark orchestration
+├── 📊 data/
+│   ├── tasks/              # 138 map images + JSON metadata
+│   ├── models.yaml         # Model registry (edit to add models!)
+│   └── results/            # Benchmark outputs & leaderboard
+├── 🔧 scripts/             # CLI tools for running benchmarks
+└── ⚙️ .github/workflows/   # Automated CI/CD
+```
+
+## 📖 Task Format
+
+Each map task includes real-world questions with expected answers:
+
+```json
 {
-  "id": "weather-madrid-2024-06",
-  "map_image": "weather_madrid_2024_06.png",
-  "context": "Weather forecast for Madrid on June 12, 2024",
+  "id": "mapwise-usa-8808",
+  "map_image": "mapwise-usa-8808.png",
+  "context": "Choropleth map of USA population density",
+  "type": "choropleth",
   "questions": [
     {
-      "q": "What is the temperature expected in Madrid?",
-      "a": "Around 30°C",
-      "type": "short_answer"
+      "q": "Which state has the highest population density?",
+      "a": "New Jersey",
+      "type": "single_answer"
     },
     {
-      "q": "Is rain expected in the region?",
-      "a": "Yes, in the northeast quadrant"
+      "q": "How many states have density above 200 people/sq mi?",
+      "a": "12",
+      "type": "count"
     }
   ]
 }
-2. Model Registry
-A YAML or JSON config listing available models:
+```
 
-yaml
-Copy
-Edit
-- id: gpt-4o
-  provider: openai
-  endpoint: "openai:gpt-4o"
-  auth: "env:OPENAI_API_KEY"
+## 🔬 Based on MapWise Dataset
 
-- id: gemini-2p5-pro
-  provider: vertexai
-  model: "gemini-pro-vision"
-  region: "us-central1"
-Adding a new model to this file can trigger a benchmark run via GitHub Actions.
+This project builds upon the excellent [MapWise dataset](https://github.com/map-wise/mapwise-dataset) by:
 
-3. Evaluation Pipeline
-Loads all tasks
+- **Importing** all USA choropleth maps and questions
+- **Adding** counterfactual examples for robustness testing  
+- **Creating** a live evaluation infrastructure
+- **Enabling** continuous community contributions
 
-Sends prompts + images to each model API
+*Citation*: If you use MapBench.Live, please cite both this project and the original MapWise paper.
 
-Scores results using GPT-4o or hard-coded keys
+## 🤝 Contributing
 
-Outputs result JSON per model
+### Add Your Model
+1. Fork this repository
+2. Edit `data/models.yaml` with your model configuration
+3. Create a pull request
+4. Watch the automated benchmark run!
 
-Example output:
+### Add New Tasks
+1. Use `scripts/add_task.py` to create new map tasks
+2. Submit a PR with your maps and questions
+3. Help expand the benchmark diversity
 
-json
-Copy
-Edit
-{
-  "model": "gpt-4o",
-  "task": "weather-madrid-2024-06",
-  "score": 92,
-  "answers": [...]
-}
-4. Frontend Website
-Built with Next.js or Astro:
+### Development
+```bash
+# Backend development
+pip install -r requirements.txt
+python3 scripts/run_benchmark.py
 
-Live leaderboard
+# Frontend development  
+cd app
+npm install
+npm run dev
+```
 
-Browse tasks and answers
+## 📄 License
 
-Submit new tasks or models
+MIT License - see [LICENSE](LICENSE) for details.
 
-Documentation & community portal
+## 🙏 Acknowledgments
 
-5. GitHub Actions CI
-On push to models.yaml or data/tasks/:
+- **MapWise Team** for the original dataset and research
+- **OpenAI & Google** for model APIs
+- **Community contributors** for expanding the benchmark
 
-Runs benchmark for updated model(s)
+---
 
-Commits updated scores to data/results/
+**🌟 Star this repository** to stay updated with the latest VLM map understanding benchmarks!
 
-Deploys updated website
-
-🔗 External Integrations
-OpenAI API (GPT-4o)
-
-Google Vertex AI (Gemini Pro Vision)
-
-Future: Hugging Face endpoints, Claude, Ollama, fine-tuned open models
-
-📌 Roadmap
- Define MVP task formats (weather, election, zoning)
-
- Script OpenAI + Vertex evaluation runners
-
- Create scoring logic using GPT-4o self-evaluator
-
- GitHub Action prototype
-
- Basic website frontend with task/results explorer
-
- Launch alpha benchmark run + open submissions
+**🔗 Visit the live site**: [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live)
