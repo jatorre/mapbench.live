@@ -47,10 +47,7 @@ build/
 # Project specific
 data/results/*.json
 !data/results/.gitkeep
-data/tasks/*.png
-data/tasks/*.jpg
-data/tasks/*.jpeg
-!data/tasks/example_*
+# Note: Include task images for the benchmark to work
 
 # Logs
 logs/

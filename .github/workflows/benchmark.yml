@@ -43,18 +43,11 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
       run: |
-        # If triggered by models.yaml change, run limited test
-        if [[ "${{ github.event_name }}" == "push" && "${{ contains(github.event.head_commit.message, 'test') }}" == "true" ]]; then
-          echo "Running limited test benchmark..."
-          python scripts/run_benchmark.py \
-            --models "gpt-4o-mini-test" \
-            --tasks "mapwise-usa-8808,example_weather,cf-imaginary-map-13283"
-        else
-          echo "Running full benchmark..."
-          python scripts/run_benchmark.py \
-            --models "${{ github.event.inputs.models }}" \
-            --tasks "${{ github.event.inputs.tasks }}"
-        fi
+        # For now, always run limited test to avoid high costs
+        echo "Running limited test benchmark with gpt-4o-mini-test..."
+        python scripts/run_benchmark.py \
+          --models "gpt-4o-mini-test" \
+          --tasks "mapwise-usa-8808,example_weather,cf-imaginary-map-13283"
     
     - name: Upload results
       uses: actions/upload-artifact@v4
