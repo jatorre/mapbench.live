@@ -1,176 +1,147 @@
-# 🗺️ MapBench.Live
+# 🗺️ CARTO MERIT
 
-**Real-World Map Understanding Benchmark for Vision-Language Models**
+**Map Evaluation and Reasoning Integrated Test**
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://jatorre.github.io/mapbench.live)
 [![Dataset](https://img.shields.io/badge/Dataset-MapWise-blue)](https://github.com/map-wise/mapwise-dataset)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **🚀 Live Benchmark**: Visit [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live) to explore the leaderboard and tasks!
+> **🚀 Live Benchmark**: Visit [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live) to explore the leaderboard and evaluation results!
 
-## What is MapBench.Live?
+## What is CARTO MERIT?
 
-MapBench.Live is the **first live, continuously updated benchmark** for evaluating vision-language models (VLMs) on real-world map interpretation tasks. Built upon the [MapWise dataset](https://github.com/map-wise/mapwise-dataset), this project transforms static evaluation into a dynamic, community-driven platform.
+CARTO MERIT (**Map Evaluation and Reasoning Integrated Test**) is a comprehensive benchmark for evaluating vision-language models on real-world map understanding tasks. Built upon the [MapWise dataset](https://github.com/map-wise/mapwise-dataset), this live benchmark provides continuous evaluation of model performance on geographic reasoning.
 
-### 🎯 Why MapBench.Live?
+### 🎯 Why CARTO MERIT?
 
-**From Static to Live**: Traditional benchmarks are static snapshots. MapBench.Live evolves continuously with:
+**Real-World Geographic Understanding**: Unlike synthetic datasets, we evaluate models on actual maps that humans encounter daily:
+- 🗺️ **Choropleth visualizations** with complex legends and data patterns
+- 🌍 **Spatial reasoning** tasks requiring geographic knowledge
+- 📊 **Legend comprehension** and data interpretation
+- 🔍 **Counterfactual analysis** for robustness testing
+
+**Live, Continuous Evaluation**: 
 - 🔄 **Automatic evaluation** of new model submissions
 - 📊 **Real-time leaderboard** updates
-- 🌍 **Community contributions** of new map tasks
+- 🌍 **Community-driven** benchmark expansion
 - 📈 **Transparent, reproducible** results
 
-**Real-World Map Understanding**: Unlike synthetic datasets, we use actual maps that humans encounter daily:
-- 🌦️ Weather forecasts and climate data
-- 🗳️ Election results and political maps  
-- 🏙️ Urban planning and zoning maps
-- 🗺️ Choropleth visualizations with complex legends
-
-## 📊 Current Status
+### 📊 Current Benchmark Statistics
 
 | Metric | Value |
 |--------|-------|
-| **Maps** | 138 (98 USA + 40 counterfactuals) |
+| **Maps** | 138 (98 USA choropleth + 40 counterfactuals) |
 | **Questions** | 1,171 |
-| **Question Types** | 5 (count, yes/no, single, range, list) |
-| **Models Evaluated** | 4 (GPT-4o, Gemini variants) |
-| **Live Site** | ✅ [mapbench.live](https://jatorre.github.io/mapbench.live) |
+| **Task Types** | 4 (Choropleth, Spatial, Legend, Counterfactual) |
+| **Models Evaluated** | Live leaderboard available |
+| **Live Site** | ✅ [CARTO MERIT](https://jatorre.github.io/mapbench.live) |
 
 ## 🏆 Current Leaderboard
 
-| Rank | Model | Overall Score | Choropleth | Weather |
-|------|-------|---------------|------------|---------|
-| 🥇 | GPT-4o | **92.5%** | 93.2% | 91.8% |
-| 🥈 | Gemini-2-Flash | **89.3%** | 90.1% | 88.5% |
-| 🥉 | Gemini-1.5-Pro | **87.8%** | 88.5% | 87.1% |
-| 4 | GPT-4o-Mini | **82.4%** | 83.1% | 81.7% |
+Visit the [live leaderboard](https://jatorre.github.io/mapbench.live) to see the latest model performance rankings.
 
-*View the full leaderboard at [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live)*
+## 🔬 Based on MapWise Research
 
-## 🚀 Quick Start
+This benchmark implements the methodology from **"MapWise: Evaluating Vision-Language Models for Advanced Map Queries"**, using their curated dataset of real-world geographic visualizations.
 
-### 1. Submit Your Model
+**Citation**: When using CARTO MERIT, please cite both this benchmark and the original MapWise research:
 
-Add your model to the leaderboard by editing [`data/models.yaml`](data/models.yaml):
+```bibtex
+@misc{cartomerit2025,
+  title={CARTO MERIT: Map Evaluation and Reasoning Integrated Test},
+  author={},
+  year={2025},
+  url={https://github.com/jatorre/mapbench.live}
+}
 
-```yaml
-- id: your-model-name
-  provider: openai  # or vertexai
-  endpoint: "openai:gpt-4o"
-  auth: "env:YOUR_API_KEY"
-  description: "Your model description"
+@misc{mapwise2024,
+  title={MapWise: Evaluating Vision-Language Models for Advanced Map Queries},
+  author={MapWise Team},
+  year={2024},
+  url={https://github.com/map-wise/mapwise-dataset}
+}
 ```
 
-**That's it!** GitHub Actions will automatically:
-- Run the benchmark on all 138 maps
-- Score the 1,171 questions
-- Update the live leaderboard
-- Deploy the results
+## 🚀 Submit Your Model
 
-### 2. Run Locally
+Add your vision-language model to the leaderboard:
 
-```bash
-# Clone and setup
-git clone https://github.com/jatorre/mapbench.live.git
-cd mapbench.live
-pip install -r requirements.txt
-
-# Run benchmark
-export OPENAI_API_KEY="your-key"
-python3 scripts/run_benchmark.py --models "gpt-4o-mini"
-
-# View results
-python3 scripts/generate_demo_results.py
-```
-
-### 3. Add New Tasks
-
-```bash
-# Add a new map task
-python3 scripts/add_task.py \
-  --id "weather-tokyo-2024" \
-  --image "path/to/map.png" \
-  --type "weather" \
-  --questions "What's the temperature?|25°C|short_answer"
-```
+1. **Fork** this repository
+2. **Edit** `data/models.yaml` with your model configuration:
+   ```yaml
+   - id: your-model-name
+     provider: openai  # or vertexai, anthropic
+     endpoint: "openai:gpt-4o"
+     auth: "env:YOUR_API_KEY"
+     description: "Your model description"
+   ```
+3. **Submit** a pull request
+4. **Automated evaluation** runs and updates the leaderboard
 
 ## 🏗️ Architecture
 
 ```
-mapbench.live/
-├── 🌐 app/                  # Next.js website (leaderboard, task explorer)
+carto-merit/
+├── 🌐 app/                  # Single-page website
 ├── 🤖 benchmarks/           # Python evaluation pipeline
-│   ├── runner.py           # Model execution (OpenAI, Vertex AI)
+│   ├── runner.py           # Model execution (OpenAI, Vertex AI, Anthropic)
 │   ├── scorer.py           # GPT-4o based scoring
 │   └── evaluator.py        # End-to-end benchmark orchestration
 ├── 📊 data/
-│   ├── tasks/              # 138 map images + JSON metadata
+│   ├── tasks/              # 138 map images + JSON metadata  
 │   ├── models.yaml         # Model registry (edit to add models!)
 │   └── results/            # Benchmark outputs & leaderboard
 ├── 🔧 scripts/             # CLI tools for running benchmarks
 └── ⚙️ .github/workflows/   # Automated CI/CD
 ```
 
-## 📖 Task Format
+## 📖 Evaluation Tasks
 
-Each map task includes real-world questions with expected answers:
+### Task Categories
 
-```json
-{
-  "id": "mapwise-usa-8808",
-  "map_image": "mapwise-usa-8808.png",
-  "context": "Choropleth map of USA population density",
-  "type": "choropleth",
-  "questions": [
-    {
-      "q": "Which state has the highest population density?",
-      "a": "New Jersey",
-      "type": "single_answer"
-    },
-    {
-      "q": "How many states have density above 200 people/sq mi?",
-      "a": "12",
-      "type": "count"
-    }
-  ]
-}
+1. **Choropleth Analysis** (98 maps)
+   - Interpret color-coded geographic data
+   - *"Which state has the highest population density?"*
+
+2. **Spatial Reasoning** (650+ questions)
+   - Understand geographic relationships
+   - *"Name the northernmost state with higher values than neighbors"*
+
+3. **Legend Comprehension** (321+ questions)
+   - Parse map legends and scales
+   - *"How many distinct categories does the legend contain?"*
+
+4. **Counterfactual Analysis** (40 maps)
+   - Detect manipulated map data
+   - *"Identify inconsistent geographic patterns"*
+
+## 🛠️ Local Development
+
+### Run Benchmarks
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Set API key
+export OPENAI_API_KEY="your-key"
+
+# Run evaluation
+python3 scripts/run_benchmark.py --models "gpt-4o-mini"
 ```
 
-## 🔬 Based on MapWise Dataset
-
-This project builds upon the excellent [MapWise dataset](https://github.com/map-wise/mapwise-dataset) by:
-
-- **Importing** all USA choropleth maps and questions
-- **Adding** counterfactual examples for robustness testing  
-- **Creating** a live evaluation infrastructure
-- **Enabling** continuous community contributions
-
-*Citation*: If you use MapBench.Live, please cite both this project and the original MapWise paper.
-
-## 🤝 Contributing
-
-### Add Your Model
-1. Fork this repository
-2. Edit `data/models.yaml` with your model configuration
-3. Create a pull request
-4. Watch the automated benchmark run!
-
-### Add New Tasks
-1. Use `scripts/add_task.py` to create new map tasks
-2. Submit a PR with your maps and questions
-3. Help expand the benchmark diversity
-
-### Development
+### Development Server
 ```bash
-# Backend development
-pip install -r requirements.txt
-python3 scripts/run_benchmark.py
-
-# Frontend development  
 cd app
 npm install
 npm run dev
 ```
+
+## 🤝 Contributing
+
+- **Add Models**: Edit `data/models.yaml` and submit PR
+- **Add Tasks**: Use `scripts/add_task.py` for new map tasks
+- **Report Issues**: Use GitHub Issues for bugs or suggestions
+- **Expand Dataset**: Help grow the benchmark with new map types
 
 ## 📄 License
 
@@ -178,12 +149,12 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🙏 Acknowledgments
 
-- **MapWise Team** for the original dataset and research
-- **OpenAI & Google** for model APIs
-- **Community contributors** for expanding the benchmark
+- **MapWise Team** for the foundational research and dataset
+- **OpenAI, Google, Anthropic** for model APIs  
+- **Research Community** for contributions and feedback
 
 ---
 
-**🌟 Star this repository** to stay updated with the latest VLM map understanding benchmarks!
+**🌟 Star this repository** to stay updated with the latest vision-language model evaluations on map understanding!
 
-**🔗 Visit the live site**: [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live)
+**🗺️ Visit CARTO MERIT**: [jatorre.github.io/mapbench.live](https://jatorre.github.io/mapbench.live)
