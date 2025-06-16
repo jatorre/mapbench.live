@@ -49,21 +49,21 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
       run: |
-        # Check if models.yaml was changed to run test models
-        if git diff --name-only HEAD HEAD~1 | grep -q "data/models.yaml"; then
-          echo "models.yaml changed - running test models on 30 random tasks..."
-          # Get all test models from models.yaml
-          TEST_MODELS=$(python -c "import yaml; f = open('data/models.yaml', 'r'); models = yaml.safe_load(f)['models']; test_models = [m['id'] for m in models if '-test' in m['id']]; print(','.join(test_models))")
-          echo "Running test models: $TEST_MODELS"
+        # Get all test models from models.yaml
+        TEST_MODELS=$(python -c "import yaml; f = open('data/models.yaml', 'r'); models = yaml.safe_load(f)['models']; test_models = [m['id'] for m in models if '-test' in m['id']]; print(','.join(test_models))")
+        
+        if [ -n "$TEST_MODELS" ]; then
+          echo "Found test models: $TEST_MODELS"
+          echo "Running test models on 30 random tasks..."
           python scripts/run_benchmark.py \
             --models "$TEST_MODELS" \
             --limit 30
         else
-          # Default limited test
-          echo "Running limited test benchmark with gpt-4o-mini-test..."
+          # Fallback if no test models found
+          echo "No test models found, running default benchmark..."
           python scripts/run_benchmark.py \
-            --models "gpt-4o-mini-test" \
-            --tasks "mapwise-usa-8808,example_weather,cf-imaginary-map-13283"
+            --models "gpt-4o-mini" \
+            --limit 10
         fi
     
     - name: Upload results
