@@ -164,11 +164,14 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Map Image */}
               <div>
-                <div className="bg-gray-200 rounded-lg p-8 text-center">
-                  <MapIcon className="h-32 w-32 mx-auto text-gray-400 mb-4" />
-                  <p className="text-gray-600">USA Choropleth Map</p>
-                  <p className="text-sm text-gray-500">Population density by state</p>
+                <div className="bg-gray-100 rounded-lg overflow-hidden">
+                  <img 
+                    src="/mapbench.live/data/tasks/mapwise-usa-109.png" 
+                    alt="USA Choropleth Map showing state data with 5 distinct value categories"
+                    className="w-full h-auto"
+                  />
                 </div>
+                <p className="text-center text-sm text-gray-500 mt-2">USA Choropleth Map (MapWise Dataset)</p>
               </div>
               
               {/* Question and Answers */}
@@ -177,7 +180,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Example Question:</h3>
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <p className="text-blue-900 font-medium">
-                      &ldquo;Which state has the highest population density, and what visual cues indicate this?&rdquo;
+                      &ldquo;What value range does the darkest shade represent?&rdquo;
                     </p>
                   </div>
                 </div>
@@ -188,7 +191,7 @@ export default function Home() {
                       <span className="text-green-600 font-semibold">👤 Human Expert</span>
                       <span className="ml-2 bg-green-100 text-green-800 text-xs px-2 py-1 rounded">94% accuracy</span>
                     </div>
-                    <p className="text-gray-700">&ldquo;New Jersey has the highest density, indicated by the darkest color shade in the northeast region.&rdquo;</p>
+                    <p className="text-gray-700">&ldquo;29.1-34.2% - I can see this represents the highest value category based on the legend and the darkest shaded states.&rdquo;</p>
                   </div>
                   
                   <div className="border-l-4 border-blue-500 pl-4">
@@ -196,7 +199,7 @@ export default function Home() {
                       <span className="text-blue-600 font-semibold">🤖 GPT-4o</span>
                       <span className="ml-2 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">87% accuracy</span>
                     </div>
-                    <p className="text-gray-700">&ldquo;Based on the color coding, New Jersey appears to have the highest population density.&rdquo;</p>
+                    <p className="text-gray-700">&ldquo;The darkest shade represents the range 29.1-34.2%.&rdquo;</p>
                   </div>
                   
                   <div className="border-l-4 border-yellow-500 pl-4">
@@ -204,7 +207,7 @@ export default function Home() {
                       <span className="text-yellow-600 font-semibold">🤖 GPT-4o-mini</span>
                       <span className="ml-2 bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">76% accuracy</span>
                     </div>
-                    <p className="text-gray-700">&ldquo;The northeastern states show darker colors suggesting higher density.&rdquo;</p>
+                    <p className="text-gray-700">&ldquo;The darkest color appears to represent the highest values on the map.&rdquo;</p>
                   </div>
                 </div>
               </div>
