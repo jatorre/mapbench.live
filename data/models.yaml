@@ -32,11 +32,11 @@ models:
     auth: "env:OPENAI_API_KEY"
     description: "Test run with GPT-4 Turbo with vision on 30 tasks"
     
-  - id: gpt-4-vision-preview-test
+  - id: gpt-4-turbo-2024-04-09-test
     provider: openai
-    endpoint: "openai:gpt-4-vision-preview"
+    endpoint: "openai:gpt-4-turbo-2024-04-09"
     auth: "env:OPENAI_API_KEY"
-    description: "Test run with GPT-4 Vision Preview on 30 tasks"
+    description: "Test run with latest GPT-4 Turbo (Apr 2024) with vision on 30 tasks"
     
   - id: gemini-2-flash
     provider: vertexai
