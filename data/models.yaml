@@ -33,3 +33,4 @@ models:
     region: "us-central1"
     auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
     description: "Google Gemini 1.5 Pro with vision"# Trigger new benchmark run with fixed actions
+# Re-trigger benchmark with fixed permissions
