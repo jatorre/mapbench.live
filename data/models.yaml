@@ -32,6 +32,12 @@ models:
     auth: "env:OPENAI_API_KEY"
     description: "Test run with GPT-4 Turbo with vision on 30 tasks"
     
+  - id: gpt-4-vision-preview-test
+    provider: openai
+    endpoint: "openai:gpt-4-vision-preview"
+    auth: "env:OPENAI_API_KEY"
+    description: "Test run with GPT-4 Vision Preview on 30 tasks"
+    
   - id: gemini-2-flash
     provider: vertexai
     model: "gemini-2.0-flash-exp"
@@ -46,4 +52,4 @@ models:
     auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
     description: "Google Gemini 1.5 Pro with vision"
 
-# Trigger benchmark run for GPT-4o and GPT-4 Turbo on 30 tasks
+# Trigger benchmark run for GPT-4o, GPT-4 Turbo, and GPT-4 Vision on 30 tasks
