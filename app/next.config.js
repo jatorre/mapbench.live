@@ -5,7 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/mapbench.live' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/mapbench.live' : '',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
