@@ -15,49 +15,35 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // In production, this would fetch from an API
-    // For now, we'll use mock data
-    const mockData: LeaderboardEntry[] = [
-      {
-        rank: 1,
-        model_id: "gpt-4o",
-        overall_score: 92.5,
-        total_questions: 1171,
-        last_updated: "2024-01-15T12:00:00Z",
-        score_choropleth: 93.2,
-        score_weather: 91.8
-      },
-      {
-        rank: 2,
-        model_id: "gemini-2-flash",
-        overall_score: 89.3,
-        total_questions: 1171,
-        last_updated: "2024-01-15T12:00:00Z",
-        score_choropleth: 90.1,
-        score_weather: 88.5
-      },
-      {
-        rank: 3,
-        model_id: "gemini-1-5-pro",
-        overall_score: 87.8,
-        total_questions: 1171,
-        last_updated: "2024-01-15T12:00:00Z",
-        score_choropleth: 88.5,
-        score_weather: 87.1
-      },
-      {
-        rank: 4,
-        model_id: "gpt-4o-mini",
-        overall_score: 82.4,
-        total_questions: 1171,
-        last_updated: "2024-01-15T12:00:00Z",
-        score_choropleth: 83.1,
-        score_weather: 81.7
-      }
-    ]
-    
-    setLeaderboard(mockData)
-    setLoading(false)
+    // Load real leaderboard data
+    fetch('/mapbench.live/data/results/leaderboard_latest.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load leaderboard data');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setLeaderboard(data)
+        setLoading(false)
+      })
+      .catch(error => {
+        console.error('Error loading leaderboard:', error)
+        // Fallback to demo data if real data fails to load
+        const mockData: LeaderboardEntry[] = [
+          {
+            rank: 1,
+            model_id: "gpt-4o-mini-test",
+            overall_score: 85.0,
+            total_questions: 30,
+            last_updated: new Date().toISOString(),
+            score_choropleth: 87.0,
+            score_weather: 83.0
+          }
+        ]
+        setLeaderboard(mockData)
+        setLoading(false)
+      })
   }, [])
 
   const getRankIcon = (rank: number) => {

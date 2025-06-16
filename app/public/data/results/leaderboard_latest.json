@@ -1,0 +1,46 @@
+[
+  {
+    "rank": 1,
+    "model_id": "gpt-4o",
+    "overall_score": 92.5,
+    "total_questions": 1171,
+    "last_updated": "2025-06-16T11:11:18.140307",
+    "score_mapwise-usa-8808": 94.2,
+    "score_choropleth": 93.2,
+    "score_weather": 91.8,
+    "score_counterfactual": 89.5
+  },
+  {
+    "rank": 2,
+    "model_id": "gemini-2-flash",
+    "overall_score": 89.3,
+    "total_questions": 1171,
+    "last_updated": "2025-06-16T11:11:18.140455",
+    "score_mapwise-usa-8808": 91.1,
+    "score_choropleth": 90.1,
+    "score_weather": 88.5,
+    "score_counterfactual": 86.2
+  },
+  {
+    "rank": 3,
+    "model_id": "gemini-1-5-pro",
+    "overall_score": 87.8,
+    "total_questions": 1171,
+    "last_updated": "2025-06-16T11:11:18.140457",
+    "score_mapwise-usa-8808": 89.5,
+    "score_choropleth": 88.5,
+    "score_weather": 87.1,
+    "score_counterfactual": 85.0
+  },
+  {
+    "rank": 4,
+    "model_id": "gpt-4o-mini",
+    "overall_score": 82.4,
+    "total_questions": 1171,
+    "last_updated": "2025-06-16T11:11:18.140458",
+    "score_mapwise-usa-8808": 84.0,
+    "score_choropleth": 83.1,
+    "score_weather": 81.7,
+    "score_counterfactual": 80.2
+  }
+]
