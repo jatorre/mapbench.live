@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { MapIcon, TrophyIcon, BarChart3Icon, FileTextIcon, GithubIcon, ExternalLinkIcon } from 'lucide-react'
 
 interface LeaderboardEntry {
@@ -32,15 +33,38 @@ export default function Home() {
     fetch('/mapbench.live/data/results/leaderboard_latest.json')
       .then(response => response.json())
       .then(data => {
-        setLeaderboard(data)
+        // Add human baseline to the data
+        const dataWithHuman = [
+          {
+            rank: 1,
+            model_id: "Human Expert",
+            overall_score: 94.0,
+            total_questions: 1171,
+            last_updated: "2024-12-01T00:00:00Z",
+            is_human: true
+          },
+          ...data.map((entry: LeaderboardEntry) => ({
+            ...entry,
+            rank: entry.rank + 1
+          }))
+        ]
+        setLeaderboard(dataWithHuman)
         setLoading(false)
       })
       .catch(error => {
         console.error('Error loading leaderboard:', error)
-        // Fallback data
+        // Fallback data with human baseline
         const fallbackData: LeaderboardEntry[] = [
           {
             rank: 1,
+            model_id: "Human Expert",
+            overall_score: 94.0,
+            total_questions: 1171,
+            last_updated: "2024-12-01T00:00:00Z",
+            is_human: true
+          },
+          {
+            rank: 2,
             model_id: "gpt-4o-mini-test",
             overall_score: 76.7,
             total_questions: 30,
@@ -130,6 +154,64 @@ export default function Home() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Showcase Example */}
+        <section className="mb-12">
+          <div className="bg-white rounded-lg shadow p-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              How Well Can AI Understand Maps?
+            </h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Map Image */}
+              <div>
+                <div className="bg-gray-200 rounded-lg p-8 text-center">
+                  <MapIcon className="h-32 w-32 mx-auto text-gray-400 mb-4" />
+                  <p className="text-gray-600">USA Choropleth Map</p>
+                  <p className="text-sm text-gray-500">Population density by state</p>
+                </div>
+              </div>
+              
+              {/* Question and Answers */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Example Question:</h3>
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <p className="text-blue-900 font-medium">
+                      &ldquo;Which state has the highest population density, and what visual cues indicate this?&rdquo;
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex items-center mb-2">
+                      <span className="text-green-600 font-semibold">👤 Human Expert</span>
+                      <span className="ml-2 bg-green-100 text-green-800 text-xs px-2 py-1 rounded">94% accuracy</span>
+                    </div>
+                    <p className="text-gray-700">&ldquo;New Jersey has the highest density, indicated by the darkest color shade in the northeast region.&rdquo;</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex items-center mb-2">
+                      <span className="text-blue-600 font-semibold">🤖 GPT-4o</span>
+                      <span className="ml-2 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">87% accuracy</span>
+                    </div>
+                    <p className="text-gray-700">&ldquo;Based on the color coding, New Jersey appears to have the highest population density.&rdquo;</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-yellow-500 pl-4">
+                    <div className="flex items-center mb-2">
+                      <span className="text-yellow-600 font-semibold">🤖 GPT-4o-mini</span>
+                      <span className="ml-2 bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">76% accuracy</span>
+                    </div>
+                    <p className="text-gray-700">&ldquo;The northeastern states show darker colors suggesting higher density.&rdquo;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Introduction */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow p-8">
@@ -175,31 +257,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Task Types */}
-        <section className="mb-12">
-          <div className="bg-white rounded-lg shadow p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <BarChart3Icon className="h-6 w-6 mr-2 text-blue-600" />
-              Evaluation Tasks
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {sampleTasks.map((task, index) => (
-                <div key={index} className="border rounded-lg p-6 hover:shadow-md transition-shadow">
-                  <div className="flex justify-between items-start mb-3">
-                    <h4 className="text-lg font-semibold text-gray-900">{task.type}</h4>
-                    <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
-                      {task.count} questions
-                    </span>
-                  </div>
-                  <p className="text-gray-600 mb-3">{task.description}</p>
-                  <div className="bg-gray-50 p-3 rounded italic text-sm text-gray-700">
-                    Example: &ldquo;{task.example}&rdquo;
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Leaderboard */}
         <section className="mb-12">
@@ -270,20 +327,78 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How to Submit */}
+        {/* Why CARTO is doing this */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Submit Your Model</h3>
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-              <p className="text-blue-900 mb-4">
-                Add your vision-language model to the leaderboard by submitting a pull request:
-              </p>
-              <ol className="list-decimal list-inside space-y-2 text-blue-800">
-                <li>Fork the <a href="https://github.com/jatorre/mapbench.live" className="underline">repository</a></li>
-                <li>Add your model configuration to <code className="bg-blue-100 px-2 py-1 rounded">data/models.yaml</code></li>
-                <li>Submit a pull request with your model details</li>
-                <li>Our automated system will evaluate your model and update the leaderboard</li>
-              </ol>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Why CARTO is Building This</h3>
+            <div className="space-y-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-3">Our Mission</h4>
+                  <p className="text-gray-700 mb-4">
+                    At CARTO, we believe that spatial intelligence is fundamental to solving the world&rsquo;s biggest challenges. 
+                    As AI systems become more capable of understanding visual data, evaluating their spatial reasoning abilities 
+                    becomes crucial for real-world applications.
+                  </p>
+                  <p className="text-gray-700">
+                    CARTO MERIT helps the research community understand how well vision-language models can interpret 
+                    the maps and geospatial visualizations that drive decision-making across industries.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-3">Real-World Impact</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start">
+                      <div className="text-blue-600 font-bold mr-3">🌍</div>
+                      <div>
+                        <div className="font-medium text-gray-900">Urban Planning</div>
+                        <div className="text-sm text-gray-600">AI systems that understand demographic and infrastructure maps</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="text-green-600 font-bold mr-3">🌿</div>
+                      <div>
+                        <div className="font-medium text-gray-900">Climate Analysis</div>
+                        <div className="text-sm text-gray-600">Models that can interpret environmental and weather data visualizations</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="text-purple-600 font-bold mr-3">📊</div>
+                      <div>
+                        <div className="font-medium text-gray-900">Business Intelligence</div>
+                        <div className="text-sm text-gray-600">Automated insights from geographic market analysis and logistics maps</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6">
+                <div className="flex items-center mb-3">
+                  <div className="text-2xl mr-3">🚀</div>
+                  <h4 className="text-lg font-semibold text-gray-900">Join the Research</h4>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Want to contribute to spatial AI research? Add your model to the leaderboard or explore our evaluation tasks.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a 
+                    href="https://github.com/jatorre/mapbench.live" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center"
+                  >
+                    <GithubIcon className="h-4 w-4 mr-2" />
+                    View Repository
+                  </a>
+                  <Link 
+                    href="/tasks" 
+                    className="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
+                  >
+                    Explore Tasks
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
