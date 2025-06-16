@@ -20,6 +20,18 @@ models:
     auth: "env:OPENAI_API_KEY"
     description: "Test run with GPT-4o mini on limited tasks"
     
+  - id: gpt-4o-test
+    provider: openai
+    endpoint: "openai:gpt-4o"
+    auth: "env:OPENAI_API_KEY"
+    description: "Test run with GPT-4o on 30 tasks"
+    
+  - id: gpt-4-turbo-test
+    provider: openai
+    endpoint: "openai:gpt-4-turbo"
+    auth: "env:OPENAI_API_KEY"
+    description: "Test run with GPT-4 Turbo with vision on 30 tasks"
+    
   - id: gemini-2-flash
     provider: vertexai
     model: "gemini-2.0-flash-exp"
@@ -32,5 +44,6 @@ models:
     model: "gemini-1.5-pro-002"
     region: "us-central1"
     auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
-    description: "Google Gemini 1.5 Pro with vision"# Trigger new benchmark run with fixed actions
-# Re-trigger benchmark with fixed permissions
+    description: "Google Gemini 1.5 Pro with vision"
+
+# Trigger benchmark run for GPT-4o and GPT-4 Turbo on 30 tasks
