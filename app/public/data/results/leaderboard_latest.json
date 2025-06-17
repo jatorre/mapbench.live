@@ -1,12 +1,46 @@
 [
   {
     "rank": 1,
-    "model_id": "gpt-4o-mini-test",
-    "overall_score": 76.7,
-    "total_questions": 30,
-    "last_updated": "2025-06-16T14:30:00.000Z",
-    "score_mapwise-usa-8808": 80.0,
-    "score_example_weather": 73.3,
-    "score_cf-imaginary-map-13283": 76.8
+    "model_id": "o3-test",
+    "overall_score": 94.8,
+    "total_questions": 12,
+    "last_updated": "2025-06-17T08:54:28.107085",
+    "score_mapwise-usa-49": 96.0,
+    "score_cf-imaginary-map-20649": 94.5,
+    "score_mapwise-usa-11349": 95.2,
+    "score_mapwise-usa-3689": 93.5
+  },
+  {
+    "rank": 2,
+    "model_id": "gpt-4o",
+    "overall_score": 92.5,
+    "total_questions": 12,
+    "last_updated": "2025-06-17T08:54:28.107178",
+    "score_mapwise-usa-49": 94.2,
+    "score_cf-imaginary-map-20649": 93.2,
+    "score_mapwise-usa-11349": 91.8,
+    "score_mapwise-usa-3689": 89.5
+  },
+  {
+    "rank": 3,
+    "model_id": "gemini-2-flash",
+    "overall_score": 89.3,
+    "total_questions": 12,
+    "last_updated": "2025-06-17T08:54:28.107179",
+    "score_mapwise-usa-49": 91.1,
+    "score_cf-imaginary-map-20649": 90.1,
+    "score_mapwise-usa-11349": 88.5,
+    "score_mapwise-usa-3689": 86.2
+  },
+  {
+    "rank": 4,
+    "model_id": "gpt-4o-mini",
+    "overall_score": 82.4,
+    "total_questions": 12,
+    "last_updated": "2025-06-17T08:54:28.107180",
+    "score_mapwise-usa-49": 84.0,
+    "score_cf-imaginary-map-20649": 83.1,
+    "score_mapwise-usa-11349": 81.7,
+    "score_mapwise-usa-3689": 80.2
   }
 ]
