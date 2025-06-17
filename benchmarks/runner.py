@@ -149,12 +149,23 @@ class ModelRunner:
                 "content": question['q']
             })
             
-            response = await client.chat.completions.create(
-                model=model.endpoint.split(":", 1)[1],
-                messages=messages,
-                max_tokens=500,
-                temperature=0.0
-            )
+            model_name = model.endpoint.split(":", 1)[1]
+            
+            # Use max_completion_tokens for o3 models, max_tokens for others
+            if model_name.startswith("o3"):
+                response = await client.chat.completions.create(
+                    model=model_name,
+                    messages=messages,
+                    max_completion_tokens=500,
+                    temperature=0.0
+                )
+            else:
+                response = await client.chat.completions.create(
+                    model=model_name,
+                    messages=messages,
+                    max_tokens=500,
+                    temperature=0.0
+                )
             
             answer_text = response.choices[0].message.content
             messages.append({

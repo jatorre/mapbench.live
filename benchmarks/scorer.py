@@ -131,16 +131,29 @@ Provide your response in JSON format:
 }}"""
         
         try:
-            response = await self.client.chat.completions.create(
-                model=self.scoring_model,
-                messages=[
-                    {"role": "system", "content": "You are a fair and accurate evaluator of map interpretation answers."},
-                    {"role": "user", "content": prompt}
-                ],
-                response_format={ "type": "json_object" },
-                temperature=0.0,
-                max_tokens=200
-            )
+            # Use max_completion_tokens for o3 models, max_tokens for others
+            if self.scoring_model.startswith("o3"):
+                response = await self.client.chat.completions.create(
+                    model=self.scoring_model,
+                    messages=[
+                        {"role": "system", "content": "You are a fair and accurate evaluator of map interpretation answers."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    response_format={ "type": "json_object" },
+                    temperature=0.0,
+                    max_completion_tokens=200
+                )
+            else:
+                response = await self.client.chat.completions.create(
+                    model=self.scoring_model,
+                    messages=[
+                        {"role": "system", "content": "You are a fair and accurate evaluator of map interpretation answers."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    response_format={ "type": "json_object" },
+                    temperature=0.0,
+                    max_tokens=200
+                )
             
             result = json.loads(response.choices[0].message.content)
             return result["score"], result["explanation"]
