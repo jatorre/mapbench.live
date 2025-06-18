@@ -132,6 +132,7 @@ Provide your response in JSON format:
         
         try:
             # Use max_completion_tokens for o3 models, max_tokens for others
+            # o3 models also don't support temperature=0.0, only default (1)
             if self.scoring_model.startswith("o3"):
                 response = await self.client.chat.completions.create(
                     model=self.scoring_model,
@@ -140,7 +141,6 @@ Provide your response in JSON format:
                         {"role": "user", "content": prompt}
                     ],
                     response_format={ "type": "json_object" },
-                    temperature=0.0,
                     max_completion_tokens=200
                 )
             else:

@@ -53,9 +53,30 @@ models:
     
   - id: gemini-1-5-pro
     provider: vertexai
-    model: "gemini-1.5-pro-002"
+    model: "gemini-1.5-pro"
     region: "us-central1"
     auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
     description: "Google Gemini 1.5 Pro with vision"
+    
+  - id: gemini-1-5-flash
+    provider: vertexai
+    model: "gemini-1.5-flash"
+    region: "us-central1"
+    auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
+    description: "Google Gemini 1.5 Flash - faster and cost-effective"
+    
+  - id: gemini-2-5-pro
+    provider: vertexai
+    model: "gemini-2.5-pro"
+    region: "us-central1"
+    auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
+    description: "Google Gemini 2.5 Pro - latest flagship model with vision"
+    
+  - id: gemini-2-5-flash
+    provider: vertexai
+    model: "gemini-2.5-flash-preview-05-20"
+    region: "us-central1"
+    auth: "env:GOOGLE_APPLICATION_CREDENTIALS"
+    description: "Google Gemini 2.5 Flash Preview - faster and cost-effective"
 
 # Trigger benchmark run for GPT-4o, GPT-4.1, GPT-4.1-mini, and o3 on 30 tasks

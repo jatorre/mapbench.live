@@ -45,11 +45,37 @@ def parse_args():
         help="Output directory for results (default: data/results)"
     )
     
+    parser.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Disable caching and run all evaluations fresh"
+    )
+    
+    parser.add_argument(
+        "--force-refresh",
+        action="store_true", 
+        help="Force refresh cached results (overrides cache)"
+    )
+    
+    parser.add_argument(
+        "--cache-stats",
+        action="store_true",
+        help="Show cache statistics and exit"
+    )
+    
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
+    
+    # Handle cache stats request
+    if args.cache_stats:
+        sys.path.insert(0, str(Path(__file__).parent.parent))
+        from benchmarks.cache import BenchmarkCache
+        cache = BenchmarkCache()
+        cache.print_cache_stats()
+        return
     
     # Parse model and task lists
     model_ids = None
@@ -60,12 +86,18 @@ def main():
     if args.tasks:
         task_ids = [t.strip() for t in args.tasks.split(",") if t.strip()]
     
+    # Determine cache settings
+    use_cache = not args.no_cache
+    force_refresh = args.force_refresh
+    
     # Run the benchmark
     try:
         asyncio.run(run_benchmark(
             model_ids=model_ids, 
             task_ids=task_ids,
-            limit=args.limit
+            limit=args.limit,
+            use_cache=use_cache,
+            force_refresh=force_refresh
         ))
         print("\nBenchmark completed successfully!")
     except Exception as e:
